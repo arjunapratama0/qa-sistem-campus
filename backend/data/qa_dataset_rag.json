@@ -1,0 +1,607 @@
+[
+  {
+    "kategori": "Sistem Kredit Semester",
+    "pesan_user": "Eh, 1 SKS itu sebenernya berapa jam sih? Aku masih bingung",
+    "jawaban_ideal": "1 SKS (Satuan Kredit Semester) setara dengan 45 jam per semester, atau 170 menit kegiatan belajar per minggu. Rinciannya tergantung jenis kegiatan:\n- **Kuliah/Responsi/Tutorial:** 50 menit tatap muka + 60 menit tugas terstruktur + 60 menit belajar mandiri per minggu\n- **Seminar atau sejenisnya:** 100 menit tatap muka + 70 menit belajar mandiri per minggu\n- **Praktikum/Praktik Studio/Lapangan:** 170 menit per minggu\n- **Program MBKM:** 1 SKS = 1 jam kegiatan (bukan jam belajar), setara 170 menit per minggu"
+  },
+  {
+    "kategori": "Sistem Kredit Semester",
+    "pesan_user": "Semester ini IPSku 3.6, berarti aku bisa ambil berapa SKS maksimal ya?",
+    "jawaban_ideal": "Selamat atas IPS-nya yang sangat baik! Dengan IPS > 3,50, kamu berhak mengambil beban studi maksimal **24 SKS** per semester (±1 SKS). Ketentuan lengkap pengambilan SKS berdasarkan IPS:\n- IPS > 3,50 → maksimal 24 SKS\n- 3,00 < IPS ≤ 3,50 → maksimal 22 SKS\n- 2,75 ≤ IPS ≤ 3,00 → maksimal 20 SKS\n- 2,50 ≤ IPS < 2,75 → maksimal 18 SKS\n- 2,00 ≤ IPS < 2,50 → maksimal 16 SKS\n- IPS < 2,00 → maksimal 12 SKS"
+  },
+  {
+    "kategori": "Sistem Kredit Semester",
+    "pesan_user": "IPS semesterku cuma 1.8, boleh nggak sih aku ambil lebih dari 12 SKS?",
+    "jawaban_ideal": "Dengan IPS 1,8 (di bawah 2,00), batas maksimal SKS yang boleh kamu ambil hanya **12 SKS** per semester. Ini adalah aturan yang berlaku di Fakultas Teknik Unud. Disarankan untuk fokus meningkatkan nilai pada semester ini agar IPS naik dan kamu bisa mengambil lebih banyak SKS ke depannya. Jika ada kesulitan akademik, kamu bisa berkonsultasi dengan Dosen Pembimbing Akademik (PA) kamu."
+  },
+  {
+    "kategori": "Sistem Kredit Semester",
+    "pesan_user": "Berapa sih minimal SKS yang harus aku ambil tiap semester?",
+    "jawaban_ideal": "Beban studi minimal per semester adalah **12 SKS**. Sementara beban studi yang dianggap wajar adalah **16–20 SKS** per semester. Pengecualian berlaku jika kamu sudah menyisakan SKS kurang dari 12 SKS untuk menyelesaikan studi."
+  },
+  {
+    "kategori": "Sistem Kredit Semester",
+    "pesan_user": "Total SKS yang harus aku selesaikan buat lulus S1 berapa ya?",
+    "jawaban_ideal": "Untuk lulus program Sarjana (S1), kamu wajib menyelesaikan minimal **144 SKS** sesuai dengan beban belajar yang ditetapkan program studi. Selain itu, kamu harus memiliki IPK ≥ 2,75 dan nilai minimal C untuk semua mata kuliah."
+  },
+  {
+    "kategori": "Penilaian dan Nilai",
+    "pesan_user": "Nilai angka 72 itu dapat huruf mutu apa ya di FT Unud?",
+    "jawaban_ideal": "Nilai angka 72 masuk ke rentang **71 ≤ N < 80**, sehingga mendapat huruf mutu **B+** dengan angka mutu 3,5 (kategori Sangat Baik). Tabel lengkap konversi nilai di FT Unud:\n- 80–100 → A (4,0 – Istimewa)\n- 71–79 → B+ (3,5 – Sangat Baik)\n- 65–70 → B (3,0 – Baik)\n- 60–64 → C+ (2,5 – Cukup Baik)\n- 55–59 → C (2,0 – Cukup)\n- 50–54 → D+ (1,5 – Kurang Cukup)\n- 40–49 → D (1,0 – Kurang)\n- 0–39 → E (0 – Sangat Kurang)"
+  },
+  {
+    "kategori": "Penilaian dan Nilai",
+    "pesan_user": "Aku mau banding nilai UAS, gimana caranya dan sampai kapan bisa banding?",
+    "jawaban_ideal": "Kamu berhak mengajukan banding nilai jika merasa ada ketidaksesuaian dengan kontrak perkuliahan yang disepakati di awal semester. Mekanismenya:\n1. Cek hasil penilaian di SIMAK-IMISSU\n2. Jika keberatan, hubungi dosen pengampu mata kuliah untuk mengajukan komplain\n3. Dosen akan mengecek dan mengisi form perbaikan, lalu disetujui Koprodi\n4. Staf administrasi akan menginput ulang nilai di SIMAK-IMISSU\n\n**Penting:** Pengajuan banding hanya dilayani **paling lama 3 hari** setelah penilaian diumumkan. Lewat dari itu, pengajuan tidak dapat diproses."
+  },
+  {
+    "kategori": "Penilaian dan Nilai",
+    "pesan_user": "Bobot penilaian proses belajar vs hasil belajar itu gimana ya di FT?",
+    "jawaban_ideal": "Di FT Unud, sistem penilaian menggunakan komposisi:\n- **Penilaian proses belajar:** bobot ≥ 60% (mencakup tugas, kuis, kehadiran, partisipasi, dll.)\n- **Penilaian hasil belajar (ujian akhir):** bobot ≤ 40%\n- **Penilaian sikap:** berkontribusi 25–40% dari keseluruhan ranah (pengetahuan, keterampilan, dan sikap)\n\nDetail persentase setiap komponen penilaian tercantum dalam Rencana Pembelajaran Semester (RPS) masing-masing mata kuliah yang diumumkan di awal perkuliahan."
+  },
+  {
+    "kategori": "Predikat Kelulusan",
+    "pesan_user": "Buat dapet predikat Cumlaude atau 'Dengan Pujian', syaratnya apa aja?",
+    "jawaban_ideal": "Untuk meraih predikat **Dengan Pujian (Cum Laude)**, kamu harus memenuhi **semua** syarat berikut:\n1. IPK **> 3,50**\n2. Lama studi **tidak boleh lebih dari 4 tahun** (8 semester)\n3. Nilai minimal **B** untuk semua mata kuliah\n4. **Tidak pernah mengulang** mata kuliah apapun\n\nJika IPK-nya lebih dari 3,50 tapi lama studi melebihi 4 tahun atau pernah mengulang, predikat otomatis turun menjadi **Sangat Memuaskan**."
+  },
+  {
+    "kategori": "Predikat Kelulusan",
+    "pesan_user": "Apa bedanya predikat Memuaskan sama Sangat Memuaskan? Syaratnya gimana?",
+    "jawaban_ideal": "Berikut perbedaan kedua predikat kelulusan tersebut:\n\n**Sangat Memuaskan:**\n- IPK: 3,01 – 3,50\n- Lama studi: maksimal 5 tahun\n- Nilai minimal: C\n\n**Memuaskan:**\n- IPK: 2,76 – 3,00\n- Lama studi: maksimal 5,5 tahun\n- Nilai minimal: C\n\nUntuk predikat terendah **Cukup**, syaratnya IPK 2,75 dengan lama studi maksimal 7 tahun dan nilai minimal C."
+  },
+  {
+    "kategori": "Predikat Kelulusan",
+    "pesan_user": "Nilai minimum buat lulus S1 di FT Unud itu berapa ya? Kalau dapet D bisa lulus nggak?",
+    "jawaban_ideal": "Untuk dinyatakan lulus program Sarjana di FT Unud, syarat minimalnya adalah:\n- IPK ≥ **2,75**\n- Nilai minimal **C** untuk setiap mata kuliah\n\nJadi, jika ada mata kuliah yang nilainya D atau E, kamu **tidak bisa lulus** dan harus mengulang mata kuliah tersebut hingga mendapat minimal nilai C. Nilai D masih dihitung dalam transkrip tetapi tidak memenuhi syarat kelulusan."
+  },
+  {
+    "kategori": "Evaluasi Kemajuan Studi",
+    "pesan_user": "Evaluasi studi di akhir semester 2 itu standarnya gimana? Aku takut kena DO",
+    "jawaban_ideal": "Evaluasi kemajuan studi mahasiswa dilakukan dalam 4 tahap. Berikut rinciannya:\n\n**Tahap I (Akhir Semester 2):**\n- Wajib mengumpulkan minimal **20 SKS** dengan **IPK ≥ 2,75**\n- Jika tidak memenuhi → mendapat **peringatan tertulis**\n\n**Tahap II (Akhir Semester 4):**\n- Wajib mengumpulkan minimal **50 SKS** dengan **IPK ≥ 2,75**\n- Jika sudah dapat peringatan di Tahap I dan masih tidak memenuhi → **tidak diizinkan melanjutkan studi**\n\n**Tahap III (Akhir Semester 6):** Wajib kumpulkan minimal **80 SKS** dengan IPK ≥ 2,75\n\n**Tahap IV (Akhir Semester 8):** Wajib kumpulkan minimal **120 SKS** dengan IPK ≥ 2,75\n\nJadi, di Tahap I belum langsung DO — baru dapat peringatan. Yang penting segera perbaiki prestasi!"
+  },
+  {
+    "kategori": "Evaluasi Kemajuan Studi",
+    "pesan_user": "Kapan mahasiswa bisa dinyatakan DO di FT Unud?",
+    "jawaban_ideal": "Mahasiswa dapat dinyatakan Drop Out (DO) atau putus studi dalam kondisi berikut:\n1. Mendapat **peringatan 2 kali berturut-turut** dari hasil evaluasi Tahap I hingga IV (tidak memenuhi target SKS dan IPK)\n2. **Tidak mendaftar ulang 2 semester berturut-turut** tanpa cuti akademik (dianggap mengundurkan diri)\n3. **Tidak memiliki nilai 2 semester berturut-turut** tanpa sepengetahuan Dekan (bukan sedang TA/Skripsi)\n4. Belum menyelesaikan studi hingga **semester 14** setelah membuat surat pernyataan bermeterai\n5. Melanggar aturan berat: terlibat NAPZA, pelecehan seksual, tindakan kriminal sesuai Peraturan Rektor No. 16 Tahun 2021\n\nMasa studi maksimal untuk program sarjana adalah **7 tahun (14 semester)**."
+  },
+  {
+    "kategori": "Evaluasi Kemajuan Studi",
+    "pesan_user": "Di akhir semester 8 aku belum sidang skripsi, apa yang terjadi?",
+    "jawaban_ideal": "Jika di akhir semester 8 kamu belum menempuh ujian skripsi, kamu akan mendapat peringatan berupa kewajiban mengisi **surat pernyataan bermeterai** yang menyatakan bersedia menyelesaikan studi (lulus) paling lambat **semester 14** dengan IPK minimal 2,75. Jika hingga semester 14 belum juga lulus, maka kamu akan dinyatakan **Drop Out (DO)**. Segera konsultasikan dengan dosen pembimbing dan PA kamu untuk menyusun rencana penyelesaian skripsi."
+  },
+  {
+    "kategori": "Evaluasi Kemajuan Studi",
+    "pesan_user": "Berapa lama maksimal studi S1 di FT Unud?",
+    "jawaban_ideal": "Masa studi maksimal untuk program Sarjana (S1) di Fakultas Teknik Universitas Udayana adalah **7 tahun (14 semester)**. Melebihi batas ini, mahasiswa akan dinyatakan Drop Out (DO). Perlu dicatat bahwa masa cuti akademik **tetap dihitung** sebagai masa studi."
+  },
+  {
+    "kategori": "Registrasi Akademik & KRS",
+    "pesan_user": "KRS semester ganjil 2025/2026 itu pengisiannya kapan ya?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik Universitas Udayana 2025–2026:\n- **Pengisian KRS Mahasiswa Lama:** 17 Juli – 15 Agustus 2025\n- **Perubahan KRS:** 19 – 23 Agustus 2025\n\nPastikan kamu sudah melunasi UKT sebelum mengisi KRS. Pengisian KRS dilakukan secara online melalui laman **https://simak-ng.unud.ac.id** setelah mendapat persetujuan dari Dosen PA kamu."
+  },
+  {
+    "kategori": "Registrasi Akademik & KRS",
+    "pesan_user": "Kalau aku lupa isi KRS tepat waktu, gimana? Masih bisa nggak?",
+    "jawaban_ideal": "Jika kamu melewatkan batas waktu pengisian KRS, ada periode **Perubahan KRS** yang bisa dimanfaatkan:\n- Semester Ganjil 2025/2026: 19–23 Agustus 2025\n- Semester Genap 2025/2026: 23–27 Februari 2026\n\nDi luar periode itu, perubahan KRS tidak dapat dilakukan. Jika kamu belum mengisi KRS sama sekali dan tidak mengambil cuti, kamu **tidak bisa mengikuti perkuliahan** dan masa studi tetap dihitung. Jika ini terjadi 2 semester berturut-turut, kamu bisa dianggap mengundurkan diri. Segera hubungi bagian akademik atau PA kamu."
+  },
+  {
+    "kategori": "Registrasi Akademik & KRS",
+    "pesan_user": "Kapan batas akhir bayar UKT semester ganjil 2025?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026, pembayaran Biaya Pendidikan/Uang Kuliah Tunggal (UKT) untuk Semester Ganjil 2025/2026 adalah pada **17 Juli – 15 Agustus 2025**. Pengumuman mahasiswa aktif dikeluarkan pada 19 Agustus 2025. Pastikan membayar sebelum batas akhir agar bisa mengisi KRS dan mengikuti perkuliahan."
+  },
+  {
+    "kategori": "Registrasi Akademik & KRS",
+    "pesan_user": "Kapan perkuliahan semester ganjil 2025/2026 dimulai?",
+    "jawaban_ideal": "Perkuliahan dan Ujian Semester Ganjil 2025/2026 berlangsung pada **1 September 2025 – 10 Januari 2026**. Untuk Program Profesi, PPDS, Magister, dan Doktor, Kuliah Perdana dimulai pada **1 September 2025**."
+  },
+  {
+    "kategori": "Registrasi Akademik & KRS",
+    "pesan_user": "KRS semester genap 2025/2026 kapan pengisiannya?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026:\n- **Pembayaran UKT Semester Genap:** 2 – 20 Februari 2026\n- **Pengisian KRS:** 2 – 20 Februari 2026\n- **Perubahan KRS:** 23 – 27 Februari 2026\n- **Pengumuman Mahasiswa Aktif:** 23 Februari 2026\n\nPerkuliahan semester genap dimulai sekitar awal Maret 2026."
+  },
+  {
+    "kategori": "Registrasi Akademik & KRS",
+    "pesan_user": "Gimana caranya isi KRS di SIMAK? Aku maba baru tau sistem ini",
+    "jawaban_ideal": "Pengisian KRS di FT Unud dilakukan secara online melalui laman **https://simak-ng.unud.ac.id** (juga dikenal sebagai IMISSU). Alurnya:\n1. Login ke SIMAK dengan akun mahasiswa kamu\n2. Pilih mata kuliah sesuai rencana studi dan rekomendasi PA\n3. Ajukan KRS ke Dosen PA untuk mendapat **persetujuan online**\n4. Dosen PA menyetujui rencana studi kamu melalui IMISSU\n5. KRS yang sudah disetujui berlaku sebagai konfirmasi pengambilan mata kuliah\n\nPastikan kamu sudah berkonsultasi dengan PA sebelum pengisian KRS!"
+  },
+  {
+    "kategori": "Registrasi Akademik & KRS",
+    "pesan_user": "Batas akhir input nilai semester ganjil 2025/2026 kapan ya?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026, batas akhir input nilai Semester Ganjil 2025/2026 adalah **22 Januari 2026**. Proses Evaluasi Keberhasilan Studi Mahasiswa dilakukan pada 26 Januari 2026, dan Batas Akhir Keputusan Keberhasilan Studi Mahasiswa pada 28 Januari 2026."
+  },
+  {
+    "kategori": "Cuti Akademik",
+    "pesan_user": "Aku mau cuti semester depan, syarat dan caranya gimana ya?",
+    "jawaban_ideal": "Untuk mengajukan cuti akademik, perhatikan ketentuan dan prosedur berikut:\n\n**Syarat:**\n- Sudah menempuh kuliah minimal **2 semester**\n- Tidak sedang berada di semester terakhir masa studi\n- Cuti maksimal **2 semester total** dan tidak boleh berturut-turut\n\n**Cara Pengajuan:**\n1. Download form pengajuan cuti di **https://simak-ng.unud.ac.id**\n2. Isi dan minta tanda tangan orang tua/wali dan Dosen PA\n3. Dapatkan persetujuan dari Koordinator Program Studi\n4. Unggah form yang sudah ditandatangani ke SIMAK\n5. Bawa form asli ke Fakultas untuk diproses operator akademik\n6. Usulan diteruskan ke Rektor untuk keputusan final\n\n**Penting:** Cuti tetap dihitung sebagai masa studi!"
+  },
+  {
+    "kategori": "Cuti Akademik",
+    "pesan_user": "Batas akhir pengajuan cuti akademik semester ganjil 2025/2026 kapan?",
+    "jawaban_ideal": "Batas akhir pengajuan cuti akademik untuk Semester Ganjil 2025/2026 adalah **15 Agustus 2025**. Untuk Semester Genap 2025/2026, batas terakhirnya adalah **20 Februari 2026**. Pastikan mengajukan sebelum batas waktu tersebut karena cuti yang tidak melalui prosedur resmi tidak diakui dan tetap dihitung sebagai masa studi."
+  },
+  {
+    "kategori": "Cuti Akademik",
+    "pesan_user": "Kalau cuti tapi nggak izin resmi, apa konsekuensinya?",
+    "jawaban_ideal": "Penghentian sementara studi **tanpa izin resmi Rektor** (tidak melalui prosedur cuti akademik) membawa konsekuensi serius:\n1. **Tidak dianggap sebagai cuti akademik**\n2. Masa studi tetap dihitung berjalan\n3. Jika tidak mendaftar ulang 2 semester berturut-turut tanpa cuti resmi → **dianggap mengundurkan diri**\n4. Tetap diwajibkan membayar UKT semester yang bersangkutan\n\nJadi pastikan selalu mengurus cuti secara resmi jika memang perlu berhenti sementara."
+  },
+  {
+    "kategori": "Kehadiran dan Ujian",
+    "pesan_user": "Absensi minimal berapa persen biar boleh ikut UAS?",
+    "jawaban_ideal": "Syarat kehadiran untuk mengikuti Ujian Akhir Semester (UAS) di FT Unud:\n- **Minimal 75%** dari total pertemuan kuliah yang dilaksanakan\n- Mahasiswa yang kehadirannya **kurang dari 75%** tidak diperkenankan mengikuti UAS dan dinyatakan **tidak lulus** mata kuliah tersebut\n\n**Pengecualian (dispensasi):** Kehadiran minimal **50%** berlaku untuk mahasiswa yang mendapat dispensasi dari Dekan karena mengikuti perlombaan nasional/internasional atau kegiatan kurikuler di luar kampus yang dijadwalkan secara resmi."
+  },
+  {
+    "kategori": "Kehadiran dan Ujian",
+    "pesan_user": "Aku ikut lomba nasional jadi banyak absen, gimana ya biar bisa tetap ikut UAS?",
+    "jawaban_ideal": "Kamu bisa mengajukan dispensasi kehadiran melalui prosedur berikut:\n1. Siapkan dokumen bukti keikutsertaan lomba nasional/internasional (surat undangan/SK)\n2. Ajukan permohonan dispensasi ke Koordinator Program Studi\n3. Koprodi mengusulkan ke Dekan\n4. Dekan memberikan keputusan dispensasi\n\nDengan dispensasi dari Dekan, batas minimal kehadiran kamu turun menjadi **50%** dari pertemuan yang dijadwalkan, sehingga masih bisa mengikuti UAS. Segera urus sebelum ujian dimulai ya!"
+  },
+  {
+    "kategori": "Kehadiran dan Ujian",
+    "pesan_user": "Tata tertib ujian di FT itu gimana? Apa yang kena sanksi dikeluarkan dari ruang ujian?",
+    "jawaban_ideal": "Pelanggaran tata tertib ujian di FT Unud memiliki tingkatan sanksi:\n\n**Dikeluarkan dari ruang ujian:**\n- Melanggar tata tertib pada poin tertentu yang bersifat berat (merujuk poin 1, 2, 8, dan 16 pada aturan ujian)\n\n**Mendapat peringatan:**\n- Pelanggaran yang bersifat lebih ringan (poin 3, 4, 5, 6, 7, 12, 14, dan 15)\n\n**Dikeluarkan dan nilai dibatalkan:**\n- Pelanggaran yang sama (poin 7 dan 15) dilakukan untuk kedua kalinya\n\nSecara umum, hindari membawa/menggunakan alat komunikasi, mencontek, atau mengganggu peserta lain. Selama ujian online, platform yang digunakan bisa menggunakan Secure Exam Browser agar tidak bisa mengakses aplikasi lain."
+  },
+  {
+    "kategori": "Mata Kuliah dan Kurikulum",
+    "pesan_user": "Gimana aturan matkul prasyarat di FT? Boleh nggak ngambil matkul kalau belum lulus prasyaratnya?",
+    "jawaban_ideal": "Aturan mata kuliah berprasyarat di FT Unud adalah:\n1. Untuk mengambil mata kuliah yang memiliki prasyarat, kamu wajib mengikuti ketentuan prasyarat yang sudah ditetapkan\n2. Mata kuliah prasyarat harus sudah pernah ditempuh dengan **nilai akhir minimal D+**\n\nArtinya, kamu tidak bisa mendaftarkan mata kuliah tertentu jika mata kuliah prasyaratnya belum pernah kamu ambil, atau nilai yang kamu peroleh masih di bawah D+. Cek prasyarat setiap mata kuliah di kurikulum program studi kamu."
+  },
+  {
+    "kategori": "Mata Kuliah dan Kurikulum",
+    "pesan_user": "Aku maba, semester 1 boleh ngambil SKS bebas atau ada paket?",
+    "jawaban_ideal": "Untuk **mahasiswa baru semester 1**, pengambilan mata kuliah menggunakan **sistem paket** sesuai kurikulum Program Studi masing-masing. Kamu tidak bisa memilih-milih mata kuliah sendiri di semester pertama.\n\nBeban studi semester 1 maksimal **20 SKS** berdasarkan sistem paket ini. Baru mulai semester 2 dan seterusnya, kamu bisa mengambil mata kuliah berdasarkan IPS semester sebelumnya dengan sistem kredit penuh (full credit), artinya bisa memilih dari mata kuliah semester ganjil maupun genap."
+  },
+  {
+    "kategori": "Mata Kuliah dan Kurikulum",
+    "pesan_user": "MBKM itu apa dan berapa semester bisa dilakukan di luar prodi?",
+    "jawaban_ideal": "MBKM (Merdeka Belajar–Kampus Merdeka) adalah program yang memberi kamu kebebasan belajar di luar program studi. Di FT Unud:\n- Kamu bisa belajar di luar prodi **maksimal 3 semester** dari total 8 semester\n- Ada **9 jenis kegiatan MBKM** yang bisa dipilih: pertukaran pelajar, magang/praktik kerja, asistensi mengajar di daerah terpencil, penelitian/riset, proyek kemanusiaan, wirausaha, studi/proyek independen, KKN-Tematik, dan IISMA\n- Jika memilih MBKM, wajib mengambil **20 SKS** mata kuliah dari program studi\n- Semua kegiatan MBKM wajib dibimbing oleh dosen yang ditugaskan Koprodi/Dekan/Rektor\n- 1 SKS MBKM = 1 jam kegiatan (170 menit per minggu per semester)"
+  },
+  {
+    "kategori": "Pembimbing Akademik",
+    "pesan_user": "Tugas dosen PA itu apa aja sih? Kapan aku harus nemuin dia?",
+    "jawaban_ideal": "Dosen Pembimbing Akademik (PA) berperan penting dalam perjalanan studimu. Tugas dan tanggung jawab PA meliputi:\n1. Membimbing kamu menyusun rencana studi dan strategi pembelajaran\n2. Mengikuti perkembangan studi kamu tiap semester\n3. Memberi informasi tentang program pendidikan di FT\n4. Merekomendasikan jumlah SKS yang bisa diambil berdasarkan IPS\n5. **Menyetujui KRS kamu secara online** melalui IMISSU\n6. Membantu memantau capaian SKP\n7. Mengevaluasi keberhasilan studi dan membuat laporan peringatan akademik jika diperlukan\n8. Bertindak sebagai konselor jika ada masalah pribadi\n\nTemu PA wajib dilakukan minimal setiap awal semester saat pengisian KRS, dan bisa kapan saja jika ada masalah akademik."
+  },
+  {
+    "kategori": "Pembimbing Akademik",
+    "pesan_user": "Siapa yang bisa jadi dospem skripsi di FT Unud?",
+    "jawaban_ideal": "Syarat dosen yang boleh menjadi Pembimbing Tugas Akhir/Skripsi di FT Unud:\n- Memiliki **jabatan fungsional minimal Asisten Ahli**\n- Memiliki **pendidikan minimal S2** (Magister)\n- Sesuai dengan Peraturan Menteri PAN-RB No. 17 Tahun 2013 dan perubahannya No. 46 Tahun 2013\n\nUntuk **Pembimbing Pendamping**, bisa berasal dari luar Universitas Udayana dengan syarat yang ditentukan oleh fakultas. Pembimbing ditentukan oleh Koordinator Program Studi dan ditetapkan dengan Keputusan Dekan."
+  },
+  {
+    "kategori": "SKP (Satuan Kredit Partisipasi)",
+    "pesan_user": "SKP itu apa dan berapa poin yang harus aku kumpulkan buat bisa wisuda?",
+    "jawaban_ideal": "SKP (Satuan Kredit Partisipasi) adalah sistem penilaian keikutsertaan mahasiswa dalam kegiatan kemahasiswaan yang bersifat softskill, meliputi kegiatan penalaran/ilmiah, minat-bakat, kepanitiaan, organisasi, pengabdian masyarakat, dan partisipasi.\n\nSyarat SKP untuk wisuda S1/D4: **minimal 100 poin** SKP\n\nKomposisi poin yang disyaratkan:\n- Penalaran/ilmiah: 20–65%\n- Minat dan bakat: 5–50%\n- Kepanitiaan: 15–60%\n- Organisasi: 5–50%\n- Pengabdian masyarakat: 5–50%\n- Partisipan: 5–50%\n\nSKP harus diselesaikan dan ditandatangani paling lambat **awal semester VII**."
+  },
+  {
+    "kategori": "SKP (Satuan Kredit Partisipasi)",
+    "pesan_user": "Berapa poin SKP minimal buat daftar beasiswa?",
+    "jawaban_ideal": "Untuk mengajukan beasiswa di Universitas Udayana, kamu harus memiliki minimal **25 poin SKP**. Poin SKP merupakan salah satu syarat di antara kriteria lain seperti IPK, posisi semester, kondisi ekonomi orang tua, perilaku, kesehatan, dan keaktifan organisasi.\n\nPencatatan poin SKP dilakukan dengan cara mengunggah bukti kegiatan setiap semester melalui sistem **SiSakti di IMISSU**."
+  },
+  {
+    "kategori": "SKP (Satuan Kredit Partisipasi)",
+    "pesan_user": "Gimana cara input poin SKP? Lewat sistem apa?",
+    "jawaban_ideal": "Pencatatan poin SKP dilakukan melalui sistem **SiSakti di IMISSU** (portal mahasiswa Unud). Prosedurnya:\n1. Kumpulkan bukti keikutsertaan kegiatan (sertifikat, SK, dll.)\n2. Unggah dokumen di SiSakti setiap semester\n3. Proses validasi oleh pihak berwenang\n4. Cetak rekapitulasi poin SKP\n5. Minta pengesahan dari **Wakil Dekan Bidang Kemahasiswaan**\n\nSeluruh SKP yang terkumpul juga harus direkap dalam buku SKP dan dianggap sah jika ditandatangani oleh **Ketua BEMFT** dan **Pembina Kemahasiswaan FT Unud**."
+  },
+  {
+    "kategori": "Beasiswa",
+    "pesan_user": "Kriteria mahasiswa penerima beasiswa di FT Unud itu apa aja?",
+    "jawaban_ideal": "Secara umum, kriteria seleksi penerima beasiswa di FT Unud meliputi:\n1. **Indeks Prestasi Kumulatif (IPK)** – biasanya disyaratkan minimal tertentu\n2. **Posisi semester** mahasiswa\n3. **Kondisi ekonomi orang tua/keluarga**\n4. **Perilaku** – dilengkapi surat keterangan kelakuan baik\n5. **Kesehatan** – dilengkapi surat keterangan dokter\n6. **Keaktifan** kokurikuler dan ekstrakurikuler (termasuk poin SKP minimal 25)\n\nInformasi beasiswa yang tersedia dapat diperoleh di bagian Kemahasiswaan FT Unud. Calon penerima ditetapkan oleh Tim Evaluasi dan Monitoring yang diketuai oleh Wakil Dekan Bidang Kemahasiswaan."
+  },
+  {
+    "kategori": "Wisuda",
+    "pesan_user": "Wisuda Unud 2025 jadwalnya kapan aja? Ada berapa kali wisuda setahun?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026, jadwal wisuda Universitas Udayana adalah sebagai berikut:\n- **Wisuda ke-169:** 23 Agustus 2025 (Pendaftaran: 14 Juli – 8 Agustus 2025)\n- **Wisuda ke-170:** 30 Agustus 2025 (Pendaftaran: 14 Juli – 20 Agustus 2025)\n- **Wisuda ke-171:** 18 Oktober 2025 (Pendaftaran: 15 September – 3 Oktober 2025)\n- **Wisuda ke-172:** 25 Oktober 2025 (Pendaftaran: 15 September – 15 Oktober 2025)\n- **Wisuda ke-173:** 20 Desember 2025 (Pendaftaran: 10 November – 8 Desember 2025)\n- **Wisuda ke-174:** 28 Februari 2026 (Pendaftaran: 12 Januari – 13 Februari 2026)\n- **Wisuda ke-175:** 25 April 2026 (Pendaftaran: 9 Maret – 10 April 2026)\n- **Wisuda ke-176:** 27 Juni 2026 (Pendaftaran: 11 Mei – 12 Juni 2026)"
+  },
+  {
+    "kategori": "Wisuda",
+    "pesan_user": "Aku baru sidang skripsi, mau daftar wisuda. Kapan batas pendaftaran kelulusan?",
+    "jawaban_ideal": "Pendaftaran kelulusan (sebagai syarat wisuda) dilakukan setiap bulan. Berikut jadwalnya:\n- **September 2025:** Daftar 1–29 Sept, Penetapan 30 Sept\n- **Oktober 2025:** Daftar 1–30 Okt, Penetapan 31 Okt\n- **November 2025:** Daftar 3–27 Nov, Penetapan 28 Nov\n- **Desember 2025:** Daftar 1–30 Des, Penetapan 31 Des\n- **Januari 2026:** Daftar 1–26 Jan, Penetapan 27 Jan\n- **Februari 2026:** Daftar 2–26 Feb, Penetapan 27 Feb\n- **Maret 2026:** Daftar 2–26 Mar, Penetapan 27 Mar\n\nSetelah ditetapkan lulus, kamu bisa mendaftar wisuda sesuai jadwal wisuda yang tersedia."
+  },
+  {
+    "kategori": "KKN",
+    "pesan_user": "KKN-PPM Unud itu dilaksanakan kapan aja dalam setahun?",
+    "jawaban_ideal": "Pelaksanaan Kuliah Kerja Nyata (KKN-PPM) Universitas Udayana diadakan **2 kali dalam setahun**:\n1. **Semester Ganjil:** Januari – Februari 2025\n2. **Semester Genap:** Juli – Agustus 2025\n\nUntuk tahun ajaran 2025/2026:\n- KKN Semester Genap: **Juli – Agustus 2025**\n- KKN berikutnya: **Januari – Februari 2026**\n- Dan **Juli – Agustus 2026**\n\nCek jadwal detail dan persyaratan KKN melalui pengumuman resmi dari Universitas."
+  },
+  {
+    "kategori": "Program Percepatan (Fast Track)",
+    "pesan_user": "Program Fast Track S1 ke S2 itu gimana? Apa syaratnya?",
+    "jawaban_ideal": "Program Percepatan (Fast Track) S1 ke S2 di Unud memungkinkan kamu menyelesaikan dua jenjang dalam **maksimal 10 semester**. Syarat pendaftaran:\n1. Berstatus mahasiswa aktif di Unud\n2. Berasal dari prodi sarjana di **fakultas yang sama** dengan prodi magister yang dituju\n3. Sudah menyelesaikan perkuliahan **semester 6** dan lulus minimal **120 SKS** dengan **IPK ≥ 3,50**\n4. Nilai mata kuliah minimal **B**\n5. Memiliki nilai **TOEFL minimal 450**\n6. Mendapat rekomendasi dari dosen bergelar Doktor dengan jabatan minimal Lektor\n7. Mendapat persetujuan orang tua/wali terkait pembiayaan\n\nAkreditasi prodi sarjana dan magister yang terlibat minimal harus **Unggul/A**."
+  },
+  {
+    "kategori": "Tata Tertib dan Sanksi",
+    "pesan_user": "Aturan berpakaian di kampus FT gimana? Boleh pakai sandal nggak?",
+    "jawaban_ideal": "Ketentuan berpakaian di lingkungan Fakultas Teknik Universitas Udayana:\n1. Wajib mengenakan **kemeja atau kaos berkerah** yang rapi dan sopan\n2. Wajib menggunakan **sepatu yang sopan dengan kaos kaki** (sandal tidak diperbolehkan)\n\n**Sanksi:** Mahasiswa yang melanggar aturan berpakaian ini **tidak diperbolehkan mengikuti perkuliahan atau kegiatan lainnya** di kampus pada saat itu.\n\nSelain itu, seluruh area kampus Unud adalah **kawasan bebas asap rokok**, sehingga merokok di lingkungan kampus juga dilarang."
+  },
+  {
+    "kategori": "Tata Tertib dan Sanksi",
+    "pesan_user": "Kalau nggak daftar ulang 2 semester berturut-turut tanpa cuti, apa yang terjadi?",
+    "jawaban_ideal": "Jika kamu tidak mendaftar ulang selama **2 semester berturut-turut** tanpa cuti akademik resmi, maka kamu **dianggap mengundurkan diri** dari Universitas Udayana. Pengecualian hanya berlaku dalam kondisi force majeure (bencana alam, dll.) dengan melampirkan surat keterangan dari pihak berwenang.\n\nSelain itu, mahasiswa yang tidak mendaftar ulang tetap diwajibkan membayar UKT semester berjalan dan masa studi tetap dihitung."
+  },
+  {
+    "kategori": "Tata Tertib dan Sanksi",
+    "pesan_user": "Apa sanksi kalau mahasiswa ketahuan pake narkoba atau melakukan tindakan kriminal?",
+    "jawaban_ideal": "Mahasiswa yang melakukan tindakan tercela akan dikenakan sanksi sesuai **Peraturan Rektor Nomor 16 Tahun 2021 tentang Kode Etik Mahasiswa**. Tindakan yang berpotensi sanksi berat meliputi:\n- Terlibat **NAPZA** (Narkotika, Alkohol, Psikotropika dan Zat Adiktif)\n- Melakukan **pelecehan seksual** (diatur dalam Pertor Unud No. 12 Tahun 2021)\n- **Mencemarkan nama baik** almamater\n- Terbukti secara sah melakukan **tindakan kejahatan**\n\nSanksi bisa berupa peringatan hingga pemberhentian sebagai mahasiswa (DO). Mahasiswa yang putus studi karena pelanggaran akademik juga **tidak berhak mendapat transkrip akademik**."
+  },
+  {
+    "kategori": "Mutasi Mahasiswa",
+    "pesan_user": "Aku mau pindah prodi dari prodi lain di dalam FT, syaratnya apa?",
+    "jawaban_ideal": "Untuk perpindahan antar prodi di dalam lingkungan Fakultas Teknik (internal FT), syaratnya:\n1. Prodi asal dan prodi yang dituju **sesuai atau berbeda prodi dalam rumpun ilmu yang sama** dengan jenjang setara\n2. Mendapat **persetujuan Koordinator Program Studi** (untuk pindah dalam lingkungan FT)\n3. Akreditasi prodi asal **minimal sama/setara** dengan prodi yang dituju\n4. Sudah mengikuti pendidikan secara terus-menerus **sekurang-kurangnya 2 semester**\n5. Sudah mengumpulkan sekurang-kurangnya **24 SKS**\n\nUntuk perpindahan ke prodi di luar Fakultas Teknik, diperlukan persetujuan dari Dekan Fakultas yang dituju."
+  },
+  {
+    "kategori": "Program Studi",
+    "pesan_user": "FT Unud itu ada program studi apa aja?",
+    "jawaban_ideal": "Fakultas Teknik Universitas Udayana memiliki **7 Program Studi Sarjana**, yaitu:\n1. **Teknik Sipil**\n2. **Arsitektur**\n3. **Teknik Elektro**\n4. **Teknik Mesin**\n5. **Teknologi Informasi**\n6. **Teknik Industri**\n7. **Teknik Lingkungan**\n\nMasing-masing program studi memiliki kurikulum, mata kuliah, dan beban studi yang berbeda. Informasi detail tiap prodi dapat dilihat di Buku Pedoman Akademik FT 2024."
+  },
+  {
+    "kategori": "Penilaian dan Nilai",
+    "pesan_user": "Gimana cara hitung IPK? Aku bingung rumusnya",
+    "jawaban_ideal": "IPK (Indeks Prestasi Kumulatif) dihitung dengan rumus:\n\n**IPK = Σ(Ni × Ki) / ΣKi**\n\nDi mana:\n- **N** = Nilai numerik (angka mutu) tiap mata kuliah\n- **K** = Bobot SKS tiap mata kuliah\n- **n** = Jumlah total mata kuliah yang sudah diambil\n\n**Contoh:** Jika kamu ambil Matkul A (3 SKS, nilai A=4,0) dan Matkul B (2 SKS, nilai B=3,0):\nIPK = (3×4,0 + 2×3,0) / (3+2) = (12+6)/5 = **3,6**\n\nUntuk IPS (Indeks Prestasi Semester), rumusnya sama tapi hanya menghitung mata kuliah dalam satu semester berjalan."
+  },
+  {
+    "kategori": "Bimbingan Konseling",
+    "pesan_user": "Kalau aku lagi stress atau ada masalah personal, bisa konsultasi ke mana selain PA?",
+    "jawaban_ideal": "Selain Dosen PA, kamu bisa menggunakan layanan **Tim Bimbingan dan Konseling (TBK) Universitas Udayana**. Layanan yang tersedia:\n1. Bimbingan pengembangan diri\n2. Bimbingan akademik\n3. Bimbingan karir\n4. Konseling akademik\n5. Konseling pribadi\n\n**Alur konsultasi:**\n- Pertama → PA kamu\n- Jika PA tidak bisa membantu → Wakil Dekan I/III\n- Jika masih belum terselesaikan → TBK Universitas Udayana\n\nJangan ragu untuk mencari bantuan, karena menunda penanganan masalah bisa berdampak pada prestasi akademik dan waktu studi kamu."
+  },
+  {
+    "kategori": "Proses Perkuliahan",
+    "pesan_user": "RPS itu apa dan kapan biasanya dosen ngasihnya?",
+    "jawaban_ideal": "RPS (Rencana Pembelajaran Semester) adalah dokumen yang disusun oleh dosen pengampu yang berisi rencana lengkap perkuliahan selama satu semester, mencakup:\n- Tujuan pembelajaran\n- Materi tiap pertemuan\n- Metode pembelajaran\n- Komponen dan bobot penilaian\n- Kontrak perkuliahan\n\nRPS **wajib dikomunikasikan secara terbuka kepada mahasiswa di awal perkuliahan** (pertemuan pertama). Kamu berhak mengetahui isi RPS karena ini menjadi dasar kesepakatan bersama, termasuk sebagai acuan jika kamu hendak mengajukan banding nilai."
+  },
+  {
+    "kategori": "Proses Perkuliahan",
+    "pesan_user": "Pembelajaran di FT itu semuanya tatap muka atau ada online juga?",
+    "jawaban_ideal": "Pelaksanaan perkuliahan di FT Unud menggunakan sistem **blended learning (modus ganda)**, yaitu kombinasi:\n- **Tatap muka** (offline)\n- **Daring/online** (e-learning)\n\nPembelajaran daring menerapkan metode **belajar mandiri** (diinisiasi mahasiswa) dan **belajar terbimbing** (tutorial daring dengan interaksi mahasiswa-dosen). Selain itu, pendekatan yang digunakan adalah **Student Centered Learning (SCL)** dan **Outcome Based Education (OBE)**, dengan metode seperti case-based learning atau project-based learning."
+  },
+  {
+    "kategori": "Proses Perkuliahan",
+    "pesan_user": "Berapa minggu satu semester di FT Unud?",
+    "jawaban_ideal": "Satu semester terdiri dari **16 minggu** kegiatan pembelajaran efektif, termasuk di dalamnya:\n- Perkuliahan reguler\n- Ujian Tengah Semester (UTS)\n- Ujian Akhir Semester (UAS)\n\nJadi satu semester tidak sekadar 16 minggu kuliah biasa, melainkan sudah mencakup periode ujian."
+  },
+  {
+    "kategori": "Rekognisi Pembelajaran Lampau",
+    "pesan_user": "Aku punya pengalaman kerja dan sertifikasi, bisa diakui jadi SKS nggak? (RPL)",
+    "jawaban_ideal": "Ya, kamu bisa mengajukan Rekognisi Pembelajaran Lampau (RPL). Melalui RPL, pengalaman belajar dari pendidikan formal sebelumnya, nonformal, informal, atau pengalaman kerja bisa diakui sebagai SKS. Ketentuannya:\n1. Jumlah maksimal pengakuan SKS via RPL adalah **70%** dari total SKS program studi\n2. Program studi menentukan mata kuliah mana yang bisa direkognisi\n3. **Tugas akhir/skripsi tidak dapat direkognisi** melalui RPL\n4. Mahasiswa yang pernah DO di kampus lain boleh mendaftar RPL di kampus lain, tapi tidak boleh kembali ke kampus asalnya\n\nSyarat: minimal lulusan SMA/sederajat dan memiliki pengalaman nonformal/informal/kerja yang relevan."
+  },
+  {
+    "kategori": "Penerimaan Mahasiswa Baru",
+    "pesan_user": "Jalur masuk ke FT Unud ada apa aja?",
+    "jawaban_ideal": "Penerimaan mahasiswa baru Program Sarjana di Universitas Udayana (termasuk FT) tersedia melalui tiga jalur:\n1. **SNBP** (Seleksi Nasional Berdasarkan Prestasi) – jalur undangan berdasarkan prestasi akademik di SMA\n2. **SNBT** (Seleksi Nasional Berdasarkan Tes) – jalur tes UTBK nasional\n3. **Jalur Mandiri** – terdiri dari beberapa sub-jalur:\n   - Mandiri Beasiswa Prestasi\n   - Perangkingan Nilai SNBT\n   - Mandiri UTBK\n   - Pemenuhan Daya Tampung\n\nAda juga jalur khusus untuk Mahasiswa Asing dan Program Kelas Internasional."
+  },
+  {
+    "kategori": "Penerimaan Mahasiswa Baru",
+    "pesan_user": "Registrasi pendaftaran mahasiswa baru Unud dilakukan di mana?",
+    "jawaban_ideal": "Registrasi pendaftaran mahasiswa baru Universitas Udayana dilakukan secara online melalui laman **https://e-registrasi.unud.ac.id**. Pendaftaran online ini digunakan untuk mendapatkan Nomor Peserta yang diperlukan untuk mengikuti proses seleksi. Selanjutnya, mahasiswa yang dinyatakan lulus akan melakukan pendaftaran kembali secara terpusat di Universitas Udayana."
+  },
+  {
+    "kategori": "Kalender Akademik",
+    "pesan_user": "Kapan kuliah perdana semester ganjil 2025/2026 untuk mahasiswa baru?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026, Kuliah Perdana untuk mahasiswa Program Profesi, PPDS, Magister, dan Doktor adalah pada **1 September 2025**. Perkuliahan dan Ujian Semester Ganjil 2025/2026 secara keseluruhan berlangsung **1 September 2025 – 10 Januari 2026**.\n\nUntuk jadwal orientasi/PKKMB mahasiswa baru, pantau pengumuman resmi dari Universitas Udayana."
+  },
+  {
+    "kategori": "Kalender Akademik",
+    "pesan_user": "Kapan evaluasi keberhasilan studi mahasiswa dilakukan untuk semester ganjil 2025?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026 untuk Semester Ganjil:\n- **Batas Akhir Input Nilai:** 22 Januari 2026\n- **Proses Evaluasi Keberhasilan Studi:** 26 Januari 2026\n- **Batas Akhir Keputusan Keberhasilan Studi:** 28 Januari 2026\n\nHasil evaluasi ini akan dikirimkan kepada mahasiswa yang bersangkutan, dosen PA, dan orang tua mahasiswa."
+  },
+  {
+    "kategori": "Predikat Kelulusan",
+    "pesan_user": "IPKku 3.55 tapi aku pernah ngulang 1 matkul, predikat wisuda aku jadi apa?",
+    "jawaban_ideal": "Meskipun IPK kamu sudah di atas 3,50 (syarat Cum Laude), karena pernah mengulang mata kuliah, kamu **tidak bisa mendapat predikat Dengan Pujian**. Salah satu syarat mutlak Cum Laude adalah tidak pernah mengulang mata kuliah apapun.\n\nPredikat kamu akan turun menjadi **Sangat Memuaskan**, dengan catatan:\n- IPK 3,01–3,50 seharusnya Sangat Memuaskan\n- Untuk IPK > 3,50 yang gagal syarat Pujian, predikat juga otomatis menjadi **Sangat Memuaskan**\n- Syarat tambahan: lama studi tidak lebih dari 5 tahun dan nilai minimal C"
+  },
+  {
+    "kategori": "Sistem Informasi Akademik",
+    "pesan_user": "SIMAK dan IMISSU itu sama nggak? Dipakai buat apa aja?",
+    "jawaban_ideal": "SIMAK (Sistem Informasi Manajemen Akademik) dan IMISSU pada dasarnya merujuk pada sistem akademik online Universitas Udayana. Sistem ini diakses melalui **https://simak-ng.unud.ac.id** dan digunakan untuk berbagai keperluan akademik, antara lain:\n- Pengisian dan perubahan KRS setiap semester\n- Pembatalan KRS (mata kuliah)\n- Pengajuan dan download form cuti akademik\n- Penginputan dan pengecekan nilai oleh mahasiswa dan dosen\n- Persetujuan KRS oleh Dosen PA\n- Sistem SiSakti untuk pencatatan poin SKP\n- Berbagai urusan administrasi akademik lainnya\n\nPastikan kamu selalu update informasi login akun IMISSU kamu."
+  },
+  {
+    "kategori": "MBKM",
+    "pesan_user": "Siapa yang bisa jadi pembimbing MBKM dan magang?",
+    "jawaban_ideal": "Untuk kegiatan MBKM dan Praktik Kerja (magang), pembimbing terdiri dari dua pihak:\n\n**Pembimbing Utama (dari Unud):**\n- Dosen tetap dengan jabatan akademik minimal **Lektor (Gol. III/c)**\n- Atau yang diberikan kewenangan oleh Koordinator Program Studi\n- Atau yang ditetapkan dengan Surat Tugas Dekan\n\n**Pembimbing Pendamping:**\n- Berasal dari tempat kegiatan/mitra (instansi/perusahaan)\n\nTata cara penunjukan pembimbing dan penilaian MBKM mengacu pada Peraturan Rektor (Pertor Unud No. 17 Tahun 2021) dan Buku Panduan MBKM FT Unud."
+  },
+  {
+    "kategori": "MBKM",
+    "pesan_user": "Kalau ambil MBKM, ada kewajiban ambil SKS dari prodi juga nggak?",
+    "jawaban_ideal": "Ya, jika kamu memilih program MBKM, kamu **wajib mengambil 20 SKS mata kuliah** dari program studi kamu. Ini adalah kewajiban yang harus dipenuhi bersamaan dengan pelaksanaan kegiatan MBKM di luar kampus.\n\nIngat, dalam MBKM kamu bisa belajar di luar prodi **maksimal 3 semester** dari total 8 semester. Semua kegiatan MBKM yang dipilih harus dibimbing oleh dosen yang ditugaskan secara resmi."
+  },
+  {
+    "kategori": "Beban dan Waktu Studi",
+    "pesan_user": "Kalau IPSku 3.6, bisa ambil 24 SKS. Tapi kalau mau lebih dari 24 gimana?",
+    "jawaban_ideal": "Batas maksimal SKS adalah **24 SKS per semester** meskipun IPS kamu sangat tinggi (>3,50). Ketentuan ini adalah batas tertinggi yang berlaku di FT Unud. Tidak ada mekanisme untuk mengambil lebih dari 24 SKS dalam satu semester reguler, karena secara regulasi beban belajar maksimum adalah 64 jam per minggu (setara 24 SKS) untuk mahasiswa berprestasi. Manfaatkan 24 SKS ini dengan memilih mata kuliah secara strategis bersama PA kamu."
+  },
+  {
+    "kategori": "Beban dan Waktu Studi",
+    "pesan_user": "Beban belajar normal mahasiswa per hari itu berapa jam?",
+    "jawaban_ideal": "Beban belajar normal mahasiswa di FT Unud adalah:\n- **8 jam per hari** atau 48 jam per minggu, setara dengan **16 SKS per semester**\n- Maksimal **9 jam per hari** atau 54 jam per minggu, setara dengan **20 SKS per semester**\n\nUntuk mahasiswa berprestasi (IPS > 3,50), beban bisa ditambah hingga 64 jam per minggu setara 24 SKS. Ini adalah acuan untuk merencanakan jadwal belajarmu agar tidak overloaded."
+  },
+  {
+    "kategori": "Kehadiran dan Ujian",
+    "pesan_user": "Kapan UTS dan UAS semester ganjil 2025/2026?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026, pelaksanaan perkuliahan dan ujian Semester Ganjil berlangsung pada **1 September 2025 – 10 Januari 2026**. Waktu pelaksanaan UTS dan UAS ditetapkan berdasarkan kalender akademik semester bersangkutan dan dikeluarkan oleh masing-masing Program Studi sebelum berakhirnya masa perkuliahan. Pantau pengumuman dari prodi kamu untuk jadwal UTS dan UAS yang spesifik."
+  },
+  {
+    "kategori": "Kehadiran dan Ujian",
+    "pesan_user": "Dosen bisa ngasih ujian kalau pertemuan kuliah kurang dari 75% nggak?",
+    "jawaban_ideal": "Tidak. Berdasarkan aturan FT Unud, **mata kuliah yang jumlah pertemuannya kurang dari 75%** dari jumlah kuliah yang ditetapkan **tidak diperkenankan diujikan** dan dosen **wajib mengadakan kuliah tambahan** terlebih dahulu untuk memenuhi syarat 75% pertemuan. Ini berlaku dari sisi dosen, sehingga mahasiswa terlindungi dari ujian yang dilaksanakan tanpa materi yang cukup."
+  },
+  {
+    "kategori": "Penilaian dan Nilai",
+    "pesan_user": "Nilai ujian aku kayaknya salah input dosen, gimana cara komplainnya?",
+    "jawaban_ideal": "Jika kamu merasa ada kesalahan nilai, ikuti prosedur banding nilai berikut:\n1. **Cek nilai** di SIMAK-IMISSU setelah diumumkan\n2. Jika ada keberatan, **hubungi dosen pengampu** mata kuliah dan ajukan komplain\n3. Dosen akan mengecek ulang penilaian\n4. Jika memang ada perbaikan, dosen mengisi **form perbaikan** dan mendapat persetujuan Koprodi\n5. Staf administrasi **menginput ulang nilai** yang sudah diperbaiki di SIMAK-IMISSU\n\n**Penting:** Banding hanya bisa diajukan **maksimal 3 hari** setelah nilai diumumkan. Setelah lewat batas waktu ini, pengajuan tidak akan diproses."
+  },
+  {
+    "kategori": "Wisuda",
+    "pesan_user": "Selain lulus semua matkul, apa lagi syarat bisa wisuda di FT Unud?",
+    "jawaban_ideal": "Untuk mengikuti wisuda di FT Unud, kamu harus memenuhi syarat akademik dan non-akademik:\n\n**Syarat Akademik:**\n- Lulus semua mata kuliah dengan **IPK minimal 2,75**\n- Nilai minimal **C** untuk semua mata kuliah\n- Menyelesaikan Tugas Akhir/Skripsi dan lulus sidang\n\n**Syarat Non-Akademik (SKP):**\n- Mengumpulkan minimal **100 poin SKP** (S1/D4)\n- SKP sudah diselesaikan dan ditandatangani paling lambat **awal semester VII**\n\nKamu juga perlu melakukan pendaftaran kelulusan sesuai kalender akademik sebelum mendaftar wisuda."
+  },
+  {
+    "kategori": "Kalender Akademik",
+    "pesan_user": "Pengumuman mahasiswa aktif semester ganjil 2025 kapan?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026, pengumuman mahasiswa aktif untuk Semester Ganjil 2025/2026 adalah pada **19 Agustus 2025**. Status mahasiswa aktif menjadi persyaratan untuk bisa mengikuti perkuliahan. Pastikan kamu sudah membayar UKT (17 Juli – 15 Agustus 2025) dan mengisi KRS sebelum tanggal pengumuman tersebut."
+  },
+  {
+    "kategori": "Tata Tertib dan Sanksi",
+    "pesan_user": "Aku telat bayar UKT dan belum daftar ulang, tapi nggak mau cuti. Apa konsekuensinya?",
+    "jawaban_ideal": "Jika kamu tidak melakukan registrasi ulang setelah batas akhir kalender akademik dan tidak mengambil cuti akademik:\n1. **Tidak boleh mengikuti perkuliahan** semester tersebut\n2. **Masa studi tetap dihitung** berjalan\n3. **Tetap wajib membayar UKT** semester yang sedang berjalan\n\nJika ini terjadi **2 semester berturut-turut**, kamu akan dianggap **mengundurkan diri** dari Universitas Udayana. Segera konsultasikan ke bagian akademik atau PA kamu untuk mencari solusi terbaik."
+  },
+  {
+    "kategori": "Proses Perkuliahan",
+    "pesan_user": "Wajib nggak sih isi kuesioner perkuliahan di akhir semester?",
+    "jawaban_ideal": "Ya, **wajib**. Di akhir semester, setiap mahasiswa diwajibkan mengisi **kuesioner proses pembelajaran** untuk semua mata kuliah yang diikuti secara online. Kuesioner ini dikelola oleh universitas melalui USDI (Unit Sumber Daya Informasi) dan merupakan bagian dari proses evaluasi dan penjaminan mutu pembelajaran. Pastikan kamu mengisi semua kuesioner tepat waktu."
+  },
+  {
+    "kategori": "Tata Tertib dan Sanksi",
+    "pesan_user": "Kalau DO karena pelanggaran, masih bisa minta transkrip nilai nggak?",
+    "jawaban_ideal": "Tidak. Mahasiswa yang dinyatakan putus studi karena **melanggar ketentuan akademik** (bukan karena alasan lain seperti mengundurkan diri secara normal) **tidak berhak mendapatkan transkrip akademik**. Ini adalah salah satu sanksi terberat yang perlu dipahami. Berbeda dengan mahasiswa yang mengundurkan diri secara normal atau putus studi karena tidak memenuhi target akademik, yang umumnya masih bisa mendapatkan rekap nilai yang telah ditempuh."
+  },
+  {
+    "kategori": "Sistem Kredit Semester",
+    "pesan_user": "Apa itu RPL dan bisa digunakan untuk apa aja?",
+    "jawaban_ideal": "RPL (Rekognisi Pembelajaran Lampau) adalah pengakuan atas capaian pembelajaran yang diperoleh dari:\n- Pendidikan formal sebelumnya (prodi/PT lain)\n- Pendidikan nonformal atau informal\n- Pengalaman kerja\n\nKegunaan RPL:\n1. **Melanjutkan pendidikan formal** – sebagai dasar untuk melanjutkan studi di perguruan tinggi\n2. **Penyetaraan kualifikasi** tertentu\n\nKetentuan RPL di Unud:\n- Maksimal **70% total SKS** program studi bisa diakui\n- Tugas akhir/skripsi **tidak bisa** direkognisi\n- Mahasiswa yang pernah DO di PT asal **tidak boleh** mendaftar RPL kembali di PT yang sama\n- Pengakuan SKS ditetapkan oleh Pimpinan Perguruan Tinggi"
+  },
+  {
+    "kategori": "Administrasi Akademik",
+    "pesan_user": "Kalender akademik Unud bisa diakses di mana?",
+    "jawaban_ideal": "Kalender akademik Universitas Udayana dapat diakses secara online melalui website resmi Unud di **www.unud.ac.id**. Kalender akademik berisi informasi lengkap tentang alokasi waktu kegiatan akademik dan non-akademik untuk satu tahun ajaran, termasuk jadwal KRS, UKT, perkuliahan, ujian, KKN, wisuda, dan berbagai kegiatan penting lainnya."
+  },
+  {
+    "kategori": "Registrasi Akademik & KRS",
+    "pesan_user": "Kuliah semester genap 2025/2026 dimulai kapan?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026, kuliah perdana untuk Program Profesi, PPDS, Magister, dan Doktor Semester Genap dimulai **2 Maret 2026**. Pembayaran UKT dan Pengisian KRS untuk semester genap dibuka mulai **2–20 Februari 2026**, dan perubahan KRS bisa dilakukan **23–27 Februari 2026**."
+  },
+  {
+    "kategori": "Penilaian dan Nilai",
+    "pesan_user": "Nilai D di transkrip, itu ngitung IPK nggak? Bisa lulus nggak kalau ada nilai D?",
+    "jawaban_ideal": "Nilai D **tetap dihitung dalam IPK** dengan angka mutu 1,0. Namun untuk **syarat kelulusan program sarjana**, nilai minimal yang diterima adalah **C**. Artinya:\n- Nilai D dihitung dalam IPK (menurunkan IPK)\n- Mata kuliah dengan nilai D **tidak memenuhi syarat kelulusan**\n- Kamu harus **mengulang** mata kuliah tersebut hingga mendapat minimal nilai C\n- Jika nilai D adalah untuk mata kuliah prasyarat, kamu tetap bisa mendaftar mata kuliah selanjutnya (prasyarat minimal D+)"
+  },
+  {
+    "kategori": "Evaluasi Kemajuan Studi",
+    "pesan_user": "Di akhir semester 4, aku baru kumpulkan 40 SKS dengan IPK 2.8. Apa yang terjadi?",
+    "jawaban_ideal": "Di evaluasi Tahap II (akhir semester 4), syaratnya adalah mengumpulkan minimal **50 SKS** dengan **IPK ≥ 2,75**. Kamu belum memenuhi syarat SKS (baru 40 dari 50 minimal), meskipun IPK sudah di atas 2,75.\n\nAkibatnya:\n1. Kamu akan mendapat **peringatan tertulis**\n2. Jika sebelumnya sudah mendapat peringatan di Tahap I (semester 2) dan belum memenuhi syarat Tahap II, kamu **tidak diizinkan melanjutkan studi** di FT dan disarankan pindah program\n3. Jika di Tahap I belum dapat peringatan, Tahap II ini baru masuk peringatan pertama\n\nSegera konsultasi dengan PA dan Koprodi untuk menentukan langkah terbaik."
+  },
+  {
+    "kategori": "Cuti Akademik",
+    "pesan_user": "Cuti akademik bisa diambil berturut-turut nggak? Misal semester 3 dan 4 sekaligus?",
+    "jawaban_ideal": "Tidak boleh. Ketentuan cuti akademik di Unud adalah:\n- Maksimal **2 semester** selama masa studi\n- **Tidak boleh berturut-turut** (tidak bisa ambil cuti 2 semester sekaligus atau semester 3 langsung semester 4)\n- Harus sudah kuliah minimal **2 semester** sebelum bisa mengajukan cuti\n- Tidak boleh mengambil cuti di **semester terakhir** masa studi\n\nJadi jika kamu mengambil cuti semester 3, kamu bisa mengambil cuti lagi di semester 5 atau selanjutnya (bukan semester 4 langsung)."
+  },
+  {
+    "kategori": "Penerimaan Mahasiswa Baru",
+    "pesan_user": "Pengumuman hasil SNBP 2025 kapan?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik Unud 2025–2026 yang mengacu pada jadwal SNPMB nasional:\n- **Pendaftaran SNBP:** 4–18 Februari 2025\n- **Pengumuman Hasil Seleksi SNBP:** **18 Maret 2025**\n- **Proses Registrasi menjadi Mahasiswa Baru:** 4–16 April 2025\n\nPastikan cek juga jadwal resmi di website SNPMB (snpmb.bppp.kemdikbud.go.id) karena bisa berubah sesuai kebijakan pusat."
+  },
+  {
+    "kategori": "Penerimaan Mahasiswa Baru",
+    "pesan_user": "Pengumuman hasil SNBT 2025 kapan?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik Unud 2025–2026:\n- **Pendaftaran UTBK-SNBT:** 11–27 Maret 2025\n- **Pelaksanaan UTBK:** 23–30 April dan 2–3 Mei 2025\n- **Pengumuman Hasil Seleksi SNBT:** **28 Mei 2025**\n- **Proses Registrasi Mahasiswa Baru:** 13–20 Juni 2025"
+  },
+  {
+    "kategori": "Kalender Akademik",
+    "pesan_user": "Batas akhir cuti akademik semester genap 2025/2026 kapan?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026, batas terakhir pengajuan cuti akademik untuk Semester Genap 2025/2026 adalah **20 Februari 2026**. Pengajuan cuti setelah tanggal ini tidak akan diproses, dan ketidakaktifan kamu tetap dihitung sebagai masa studi. Pastikan mengurus cuti jauh sebelum batas waktu tersebut."
+  },
+  {
+    "kategori": "SKP (Satuan Kredit Partisipasi)",
+    "pesan_user": "SKP harus selesai sebelum semester berapa?",
+    "jawaban_ideal": "Semua poin SKP harus **diselesaikan dan ditandatangani paling lambat awal semester VII (tujuh)**. Hal ini penting karena SKP minimal 100 poin merupakan syarat untuk mendaftar wisuda S1. Jangan menunda pengurusan SKP sampai semester akhir — mulai kumpulkan dari semester awal melalui berbagai kegiatan organisasi, kepanitiaan, perlombaan, dan pengabdian masyarakat."
+  },
+  {
+    "kategori": "Program Percepatan (Fast Track)",
+    "pesan_user": "Fast Track di Unud, berapa lama maksimal bisa diselesaikan?",
+    "jawaban_ideal": "Program Percepatan (Fast Track) S1 ke S2 di Universitas Udayana didesain untuk diselesaikan dalam waktu **paling lama 10 semester** (5 tahun), mencakup dua jenjang sekaligus (Sarjana dan Magister). Rinciannya:\n- Menyelesaikan Program Sarjana paling lambat **semester 8** dari program percepatan\n- Beban studi S1: minimal 144 SKS, S2: minimal 54 SKS\n- Semester 7 dan/atau 8 S1, sekaligus mengambil minimal 9 SKS S2 per semester\n- Pelaksanaan sesuai Kalender Akademik Unud"
+  },
+  {
+    "kategori": "Penilaian dan Nilai",
+    "pesan_user": "Nilai C+ itu angka mutunya berapa? Masuk kategori apa?",
+    "jawaban_ideal": "Nilai **C+** memiliki angka mutu **2,5** dengan kategori **Cukup Baik**. Skala lengkap:\n- A (4,0) – Istimewa\n- B+ (3,5) – Sangat Baik\n- B (3,0) – Baik\n- C+ (2,5) – Cukup Baik\n- C (2,0) – Cukup\n- D+ (1,5) – Kurang Cukup\n- D (1,0) – Kurang\n- E (0) – Sangat Kurang\n\nNilai C+ sudah memenuhi syarat kelulusan (minimal C) dan nilai prasyarat (minimal D+)."
+  },
+  {
+    "kategori": "Proses Perkuliahan",
+    "pesan_user": "Mahasiswa semester akhir boleh ngambil kurang dari 12 SKS nggak?",
+    "jawaban_ideal": "Ya, boleh. Ketentuan beban minimal 12 SKS **tidak berlaku** bagi mahasiswa yang sudah menyisakan SKS **kurang dari 12 SKS** untuk menyelesaikan studinya. Dalam kondisi tersebut, kamu cukup mengambil sisa SKS yang diperlukan meski jumlahnya kurang dari 12. Koordinasikan dengan PA dan Koprodi kamu untuk memastikan semua mata kuliah yang tersisa sudah tepat."
+  },
+  {
+    "kategori": "Evaluasi Kemajuan Studi",
+    "pesan_user": "Kapan evaluasi kemajuan studi semester ganjil 2025/2026 dilakukan?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026:\n- **Proses Evaluasi Keberhasilan Studi Mahasiswa:** 26 Januari 2026\n- **Batas Akhir Keputusan Keberhasilan Studi:** 28 Januari 2026\n\nHasil evaluasi ini menentukan apakah mahasiswa mendapat peringatan akademik atau tidak, dan akan dikomunikasikan kepada mahasiswa, PA, dan orang tua mahasiswa."
+  },
+  {
+    "kategori": "Administrasi Akademik",
+    "pesan_user": "Apa itu Wisuda Sarjana Bersama dan kapan biasanya dilaksanakan?",
+    "jawaban_ideal": "Pelepasan Sarjana Bersama dan Wisuda adalah kegiatan seremonial formal yang dilaksanakan secara berkala oleh Universitas Udayana. Berdasarkan Kalender Akademik 2025–2026, wisuda diadakan **beberapa kali dalam setahun** (sekitar 6–8 kali) dengan jadwal pendaftaran dan pelaksanaan yang berbeda-beda setiap bulan. Contoh wisuda yang dijadwalkan: ke-169 (23 Agustus 2025), ke-170 (30 Agustus 2025), ke-171 (18 Oktober 2025), ke-172 (25 Oktober 2025), ke-173 (20 Desember 2025), dst."
+  },
+  {
+    "kategori": "Tata Tertib dan Sanksi",
+    "pesan_user": "Di kampus FT, boleh nggak merokok di area parkir atau luar gedung?",
+    "jawaban_ideal": "Tidak boleh. Kampus Universitas Udayana, termasuk Fakultas Teknik, merupakan **kawasan bebas asap rokok** secara keseluruhan. Larangan merokok berlaku di seluruh area kampus, baik di dalam gedung, ruang kuliah, laboratorium, maupun di luar gedung termasuk area parkir dan taman. Pelanggaran terhadap aturan ini dapat dikenakan sanksi sesuai tata tertib kampus."
+  },
+  {
+    "kategori": "Kemahasiswaan",
+    "pesan_user": "Organisasi mahasiswa di FT Unud ada apa aja?",
+    "jawaban_ideal": "Fakultas Teknik Universitas Udayana memiliki berbagai organisasi kemahasiswaan, di antaranya:\n- **BEMFT** (Badan Eksekutif Mahasiswa Fakultas Teknik) – organisasi eksekutif tertinggi tingkat fakultas\n- **Himpunan Mahasiswa** masing-masing Program Studi (HIMA per prodi)\n- **Kelompok Studi/Unit Kegiatan Mahasiswa** seperti IEEE Udayana University Student Branch, Kelompok Studi Cipta Loka Udayana, dan lainnya\n\nKeikutsertaan dalam organisasi ini juga berkontribusi pada poin SKP yang dibutuhkan untuk wisuda."
+  },
+  {
+    "kategori": "Evaluasi Kemajuan Studi",
+    "pesan_user": "Tahap evaluasi studi itu ada 4, di tahap mana mahasiswa bisa langsung dikeluarkan?",
+    "jawaban_ideal": "Mahasiswa tidak langsung dikeluarkan pada satu tahap tertentu, namun ada kondisi yang bisa membuat tidak bisa melanjutkan studi:\n\n**Tahap II (Akhir Semester 4):**\nJika sudah mendapat peringatan di Tahap I DAN pada Tahap II masih belum memenuhi target (50 SKS, IPK ≥ 2,75) → **tidak diizinkan melanjutkan studi** di FT\n\n**Tahap III & IV:**\nJika mendapat peringatan 2 kali berturut-turut dari Tahap I–IV → dianggap **gagal studi**\n\n**Semester 14 (Batas Maksimal):**\nJika tidak lulus hingga semester 14 meskipun sudah membuat surat pernyataan → dinyatakan **Drop Out (DO)**\n\nIntinya, satu kali peringatan belum langsung DO, tapi dua kali peringatan berturut-turut bisa berakibat tidak bisa melanjutkan."
+  },
+  {
+    "kategori": "Penerimaan Mahasiswa Baru",
+    "pesan_user": "Pendaftaran jalur mandiri Unud kapan dibukanya?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026, jadwal Jalur Mandiri Program Diploma dan Sarjana terdiri dari beberapa sub-jalur:\n- **Mandiri Beasiswa Prestasi:** Pendaftaran 19–28 Mei 2025, Pengumuman 10 Juni 2025\n- **Mandiri Perangkingan Nilai SNBT:** Pendaftaran 2–9 Juni 2025, Pengumuman 13 Juni 2025; Registrasi 26 Juni – 4 Juli 2025\n- **Mandiri UTBK:** Pendaftaran 16 Juni – 4 Juli 2025, Ujian UTBK 11–15 Juli 2025, Pengumuman 18 Juli 2025\n- **Mandiri Pemenuhan Daya Tampung:** Pendaftaran 18–22 Juli 2025, Pengumuman 25 Juli 2025"
+  },
+  {
+    "kategori": "Proses Perkuliahan",
+    "pesan_user": "Pendekatan pembelajaran di FT itu OBE itu apa artinya?",
+    "jawaban_ideal": "OBE (Outcome Based Education) adalah pendekatan pembelajaran yang diterapkan di FT Unud, di mana seluruh proses belajar-mengajar dirancang untuk mencapai **Capaian Pembelajaran Lulusan (CPL)** yang sudah ditetapkan. Artinya:\n- Setiap mata kuliah dirancang untuk memenuhi kompetensi/capaian tertentu\n- Penilaian berfokus pada apakah mahasiswa mencapai capaian yang ditargetkan\n- Kurikulum disusun secara backward dari profil lulusan yang diinginkan\n\nSelain OBE, FT juga menerapkan **Student Centered Learning (SCL)** dengan metode case-based learning atau project-based learning yang berfokus pada proses belajar aktif mahasiswa."
+  },
+  {
+    "kategori": "Administrasi Akademik",
+    "pesan_user": "Gimana prosedur kalau mahasiswa meninggal dunia, siapa yang lapor ke mana?",
+    "jawaban_ideal": "Prosedur administrasi jika mahasiswa meninggal dunia di FT Unud:\n1. **Koordinator Program Studi** menerima dan mengecek informasi meninggalnya mahasiswa\n2. Koprodi melaporkan kepada **Dekan**\n3. Dekan melaporkan kepada **Rektor**\n4. Rektor menetapkan pemberhentian dan ditembuskan kepada **BAA, Dekan, USDI, dan ahli waris** mahasiswa yang bersangkutan\n\nKeluarga atau pihak terkait yang mengetahui kabar tersebut sebaiknya segera menghubungi Koordinator Program Studi untuk memulai proses administratif ini."
+  },
+  {
+    "kategori": "Beasiswa",
+    "pesan_user": "Aku mau daftar beasiswa, di mana bisa cari info beasiswa yang tersedia?",
+    "jawaban_ideal": "Informasi mengenai beasiswa yang tersedia untuk mahasiswa FT Unud bisa diperoleh melalui:\n1. **Bagian Kemahasiswaan FT Unud** – sumber utama informasi beasiswa\n2. Website resmi **Universitas Udayana (www.unud.ac.id)**\n3. Pengumuman dari **Himpunan Mahasiswa** program studi masing-masing\n4. Portal IMISSU untuk pengumuman resmi\n\nPastikan kamu memiliki minimal **25 poin SKP** sebelum mengajukan beasiswa, karena ini adalah salah satu syarat umum. Siapkan juga dokumen pendukung seperti transkrip nilai, surat keterangan kelakuan baik, dan surat keterangan dokter."
+  },
+  {
+    "kategori": "Penilaian dan Nilai",
+    "pesan_user": "Nilai E itu bisa diperbaiki nggak? Harus ngulang atau gimana?",
+    "jawaban_ideal": "Ya, nilai E (Sangat Kurang, angka mutu 0) harus diperbaiki dengan cara **mengulang mata kuliah** tersebut pada semester berikutnya. Nilai E berarti sangat tidak memenuhi syarat dan tidak bisa dibiarkan begitu saja karena:\n1. Nilai E tidak memenuhi syarat kelulusan (minimal C)\n2. Nilai E sangat menurunkan IPK\n3. Jika mata kuliah tersebut adalah prasyarat, kamu belum bisa mengambil mata kuliah lanjutannya\n\nSaat mengulang, nilai yang terakhir diperoleh yang akan dipakai dalam perhitungan IPK (nilai lama tetap ada di transkrip tapi yang dihitung adalah yang terbaru sesuai kebijakan prodi)."
+  },
+  {
+    "kategori": "Registrasi Akademik & KRS",
+    "pesan_user": "Apa yang harus dilakukan setelah bayar UKT tapi belum isi KRS?",
+    "jawaban_ideal": "Setelah membayar UKT, segera lakukan pengisian KRS dalam periode yang sudah ditentukan:\n1. **Login ke SIMAK** di https://simak-ng.unud.ac.id\n2. **Konsultasikan rencana studi** dengan Dosen PA kamu terlebih dahulu\n3. **Isi KRS** dengan memilih mata kuliah yang akan diambil sesuai kurikulum dan rekomendasi PA\n4. **Submit KRS** untuk mendapat persetujuan online dari PA\n5. **PA menyetujui KRS** kamu melalui IMISSU\n\nPeriode pengisian KRS Semester Ganjil 2025/2026 adalah 17 Juli – 15 Agustus 2025. Jika terlewat, masih ada periode perubahan KRS (19–23 Agustus 2025) namun opsinya lebih terbatas."
+  },
+  {
+    "kategori": "Kemahasiswaan",
+    "pesan_user": "Rekognisi karya prestasi mahasiswa itu apa? Bisa diakui SKS nggak?",
+    "jawaban_ideal": "Rekognisi Karya Prestasi Mahasiswa (diatur dalam Bagian 5.8 Buku Pedoman Akademik FT 2024) adalah pengakuan terhadap prestasi mahasiswa di bidang tertentu. Terkait dengan sistem akademik:\n- Prestasi dan kegiatan kemahasiswaan diakui dalam bentuk **poin SKP** (bukan konversi SKS reguler)\n- Untuk konversi kegiatan menjadi SKS, mekanismenya melalui program **MBKM** (bukan rekognisi prestasi biasa)\n\nInformasi detail tentang jenis prestasi yang bisa direkognisi dan mekanismenya dapat dikonsultasikan ke bagian Kemahasiswaan FT Unud atau Wakil Dekan Bidang Kemahasiswaan."
+  },
+  {
+    "kategori": "Sistem Kredit Semester",
+    "pesan_user": "Apa perbedaan antara IPS dan IPK?",
+    "jawaban_ideal": "IPS dan IPK adalah dua ukuran keberhasilan studi yang berbeda:\n\n**IPS (Indeks Prestasi Semester):**\n- Mengukur keberhasilan studi dalam **satu semester**\n- Dihitung dari semua mata kuliah yang diambil di semester bersangkutan\n- Digunakan sebagai acuan untuk menentukan **jumlah SKS** yang boleh diambil semester berikutnya\n\n**IPK (Indeks Prestasi Kumulatif):**\n- Mengukur keberhasilan studi secara **keseluruhan** (akumulatif)\n- Dihitung dari semua mata kuliah yang sudah pernah diambil\n- Digunakan sebagai syarat **kelulusan** (minimal 2,75) dan **predikat wisuda**\n\nKeduanya menggunakan rumus yang sama, hanya berbeda pada rentang mata kuliah yang dihitung."
+  },
+  {
+    "kategori": "Mutasi Mahasiswa",
+    "pesan_user": "Mahasiswa dari kampus lain bisa pindah ke FT Unud nggak? Syaratnya apa?",
+    "jawaban_ideal": "Mahasiswa dari Perguruan Tinggi Negeri (PTN) lain bisa mengajukan pindah (transfer) ke FT Unud. Syarat umum:\n1. Berasal dari **PTN** (bukan PTS)\n2. Program studi asal **sesuai** dengan prodi yang dituju atau berbeda prodi dalam rumpun ilmu yang sama\n3. Akreditasi prodi asal **minimal sama/setara** dengan prodi yang dituju di FT Unud\n4. Sudah kuliah terus-menerus minimal **2 semester** dan mengumpulkan minimal **24 SKS**\n5. Mendapat persetujuan dari **Dekan FT Unud** (karena berasal dari luar FT)\n\nKonsultasikan lebih lanjut ke bagian akademik FT atau Koprodi yang dituju untuk informasi detail dan kelengkapan dokumen."
+  },
+  {
+    "kategori": "Proses Perkuliahan",
+    "pesan_user": "Gimana caranya membatalkan KRS yang sudah diisi?",
+    "jawaban_ideal": "Pembatalan KRS (pembatalan mata kuliah yang sudah diambil) dilakukan secara online melalui laman **https://simak-ng.unud.ac.id**. Prosedurnya:\n1. Login ke SIMAK\n2. Masuk ke menu KRS/Perubahan KRS\n3. Batalkan mata kuliah yang ingin dibatalkan\n4. Pembatalan harus dilakukan dalam **periode perubahan KRS** yang sudah ditetapkan dalam kalender akademik\n5. Konsultasikan dengan dosen pengasuh mata kuliah yang bersangkutan jika diperlukan\n\nPembatalan KRS di luar periode yang ditentukan tidak dapat dilakukan. Periode perubahan KRS Semester Ganjil 2025/2026 adalah 19–23 Agustus 2025."
+  },
+  {
+    "kategori": "Kalender Akademik",
+    "pesan_user": "SNBP 2025, kapan registrasi akunnya dan kapan pengisian PDSS-nya?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik Unud 2025–2026 yang mengacu jadwal SNPMB:\n- **Registrasi Akun SNPMB untuk SNBP:** 6–31 Januari 2025\n- **Pengisian PDSS (Pangkalan Data Sekolah dan Siswa):** 6–31 Januari 2025 (bersamaan dengan registrasi akun)\n- **Penetapan Kuota Sekolah:** 28 Desember 2024\n- **Pendaftaran SNBP:** 4–18 Februari 2025\n- **Pengumuman Hasil:** 18 Maret 2025"
+  },
+  {
+    "kategori": "Administrasi Akademik",
+    "pesan_user": "Lulusan terbaik FT itu kriterianya apa?",
+    "jawaban_ideal": "Catatan penting dari buku pedoman: Penghargaan **lulusan terbaik** hanya berlaku bagi mahasiswa yang menempuh studi mulai **0 (nol) SKS** di FT Unud, artinya dihitung dari mahasiswa yang masuk dan kuliah dari awal (bukan mahasiswa transfer/pindahan yang membawa SKS dari perguruan tinggi sebelumnya). Kriteria lengkap lulusan terbaik biasanya mencakup IPK tertinggi, lama studi, dan prestasi selama kuliah. Informasi detail dapat dikonfirmasi ke bagian akademik FT Unud."
+  },
+  {
+    "kategori": "Penilaian dan Nilai",
+    "pesan_user": "Nilai angka 60 sampai 64 itu dapat huruf apa?",
+    "jawaban_ideal": "Nilai angka 60–64 (tepatnya rentang **60 ≤ N < 65**) mendapat huruf mutu **C+** dengan angka mutu **2,5** (kategori Cukup Baik). Nilai C+ sudah memenuhi syarat kelulusan program sarjana (minimal C). Ingat, nilai persis 60 sudah masuk C+, bukan C."
+  },
+  {
+    "kategori": "Kehadiran dan Ujian",
+    "pesan_user": "Mahasiswa bisa nggak protes kalau dosen jarang masuk tapi tetap mau ngadain UAS?",
+    "jawaban_ideal": "Ya, kamu berhak mempertanyakannya karena ada aturan yang melindungi mahasiswa. Berdasarkan ketentuan FT Unud:\n- Mata kuliah yang jumlah pertemuannya **kurang dari 75%** tidak diperkenankan diujikan\n- Dosen **wajib mengadakan kuliah tambahan** untuk memenuhi kekurangan pertemuan\n\nJika kamu merasa pertemuan tidak mencapai 75%, kamu bisa melaporkan ke **Koordinator Program Studi** atau **Wakil Dekan I** (bidang akademik) untuk ditindaklanjuti. Catat jumlah pertemuan yang sudah dilakukan sebagai bukti."
+  },
+  {
+    "kategori": "MBKM",
+    "pesan_user": "IISMA itu termasuk program MBKM bukan? Gimana cara ikutnya?",
+    "jawaban_ideal": "Ya! **IISMA (Indonesian International Student Mobility Awards)** termasuk salah satu dari 9 jenis kegiatan MBKM yang diakui. IISMA adalah program pertukaran pelajar ke universitas luar negeri yang didanai oleh pemerintah (Kemendikbudristek).\n\nUntuk mengikuti IISMA:\n1. Pantau pengumuman pembukaan pendaftaran dari Kemendikbudristek\n2. Penuhi persyaratan (IPK, kemampuan bahasa Inggris, dll.)\n3. Konsultasi dengan **Koordinator Program Studi** untuk mendapat persetujuan dan penentuan konversi SKS\n4. Ikuti proses seleksi dari Kemendikbudristek\n5. Kegiatan IISMA dibimbing oleh dosen yang ditugaskan oleh Koprodi/Dekan\n\nDetail mekanisme dan konversi SKS mengacu pada Buku Panduan MBKM FT dan Pertor Unud No. 17 Tahun 2021."
+  },
+  {
+    "kategori": "Penilaian dan Nilai",
+    "pesan_user": "Penasaran, nilai angka minimal berapa biar dapet A?",
+    "jawaban_ideal": "Untuk mendapatkan nilai huruf **A** (Istimewa, angka mutu 4,0), nilai angka kamu harus **80 ke atas** (rentang 80 ≤ N ≤ 100). Jadi nilai 79 sudah turun ke **B+** (angka mutu 3,5). Usahakan meraih nilai minimal 80 di setiap komponen penilaian untuk mempertahankan nilai A."
+  },
+  {
+    "kategori": "Predikat Kelulusan",
+    "pesan_user": "Aku IPK 2.9 tapi studinya 6 tahun, dapat predikat apa?",
+    "jawaban_ideal": "Dengan IPK 2,9 dan lama studi 6 tahun, cek ketentuan predikat:\n\n- Predikat **Memuaskan** (IPK 2,76–3,00) mensyaratkan lama studi **maksimal 5,5 tahun**. Karena studi kamu 6 tahun (melebihi 5,5 tahun), kamu tidak memenuhi syarat Memuaskan.\n\n- Namun kamu masih memenuhi syarat predikat **Cukup** (IPK minimal 2,75, lama studi maksimal 7 tahun, nilai minimal C).\n\nJadi dengan kondisi tersebut, predikat kelulusanmu adalah **Cukup**, selama IPK-nya memenuhi syarat minimum (≥2,75) dan nilai semua mata kuliah minimal C."
+  },
+  {
+    "kategori": "Kemahasiswaan",
+    "pesan_user": "Apa kegiatan yang bisa dapat poin SKP? Contohnya apa aja?",
+    "jawaban_ideal": "Poin SKP bisa diperoleh dari berbagai jenis kegiatan, dikelompokkan dalam kategori berikut:\n\n1. **Penalaran/Ilmiah (20–65%):** Lomba karya tulis, penelitian, seminar ilmiah, olimpiade, kompetisi akademik\n2. **Minat dan Bakat (5–50%):** Lomba olahraga, seni, dan budaya yang mewakili universitas/fakultas\n3. **Kepanitiaan (15–60%):** Menjadi panitia dalam kegiatan kemahasiswaan resmi\n4. **Organisasi (5–50%):** Pengurus BEMFT, Himpunan Mahasiswa, BEM Universitas, dll.\n5. **Pengabdian Masyarakat (5–50%):** Kegiatan sosial, bakti sosial, KKN\n6. **Partisipan (5–50%):** Menghadiri seminar, pelatihan, workshop\n\nSemua kegiatan dicatat di sistem SiSakti di IMISSU dengan bukti dokumen pendukung."
+  },
+  {
+    "kategori": "Registrasi Akademik & KRS",
+    "pesan_user": "Registrasi pendaftaran mahasiswa baru 2025 jalur mandiri UTBK kapan?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik Unud 2025–2026, jadwal Jalur Mandiri UTBK adalah:\n- **Pendaftaran:** 16 Juni – 4 Juli 2025\n- **Pelaksanaan Ujian UTBK:** 11–15 Juli 2025\n- **Pengumuman Hasil Seleksi UTBK:** 18 Juli 2025\n- **Proses Registrasi menjadi Mahasiswa Baru:** 25 Juli – 1 Agustus 2025"
+  },
+  {
+    "kategori": "Proses Perkuliahan",
+    "pesan_user": "SCL itu apa? Beda nggak sama TCL yang biasa dosen ceramah?",
+    "jawaban_ideal": "**SCL (Student Centered Learning)** adalah pendekatan pembelajaran yang menempatkan mahasiswa sebagai pusat/aktor utama proses belajar — berbeda dengan **TCL (Teacher Centered Learning)** di mana dosen mendominasi sebagai penyampai materi (ceramah/satu arah).\n\nDi FT Unud, SCL diterapkan melalui metode seperti:\n- **Case-Based Learning** – belajar dari kasus/studi kasus nyata\n- **Project-Based Learning** – belajar melalui pengerjaan proyek\n- Diskusi kelompok, presentasi, dan simulasi\n\nTujuannya: menekankan proses belajar aktif, pembentukan karakter, dan kemandirian mahasiswa — bukan sekadar menghafal materi dari dosen."
+  },
+  {
+    "kategori": "Kalender Akademik",
+    "pesan_user": "Kapan perkuliahan dan ujian semester genap 2025/2026 dilaksanakan?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026, semester genap dijadwalkan dimulai sekitar **Maret 2026**. Rincian jadwal:\n- Pembayaran UKT: 2–20 Februari 2026\n- Pengisian KRS: 2–20 Februari 2026\n- Perubahan KRS: 23–27 Februari 2026\n- Kuliah perdana (Profesi, PPDS, Magister, Doktor): 2 Maret 2026\n\nJadwal lengkap perkuliahan dan ujian semester genap akan diumumkan melalui kalender akademik resmi dan sistem SIMAK Unud."
+  },
+  {
+    "kategori": "Tata Tertib dan Sanksi",
+    "pesan_user": "Mahasiswa nggak boleh coret-coret di area kampus, itu aturannya beneran ada?",
+    "jawaban_ideal": "Benar. Berdasarkan Tata Tertib Umum FT Unud, **seluruh civitas akademika** (dosen, pegawai, mahasiswa) wajib menjaga ketertiban, keamanan, dan kebersihan di seluruh area kampus — termasuk **tidak melakukan kegiatan corat-coret dalam bentuk apapun** di lingkungan kampus. Ini berlaku di ruang kuliah, laboratorium, ruang administrasi, maupun area luar ruangan. Pelanggaran bisa dikenakan sanksi sesuai aturan tata tertib yang berlaku."
+  },
+  {
+    "kategori": "Administrasi Akademik",
+    "pesan_user": "Aku mau berhenti kuliah permanen (mengundurkan diri), prosedurnya gimana?",
+    "jawaban_ideal": "Untuk mengundurkan diri secara resmi dari FT Unud, kamu perlu menempuh prosedur administrasi resmi (pengunduran diri aktif). Secara umum:\n1. Konsultasikan keputusan dengan **Dosen PA** dan **Koordinator Program Studi**\n2. Ajukan permohonan resmi kepada **Dekan** Fakultas Teknik\n3. Dekan mengusulkan ke **Rektor** untuk penetapan pemberhentian\n4. Rektor menerbitkan surat keputusan yang ditembuskan ke BAA, USDI, dan mahasiswa\n\nKamu masih berhak mendapat **transkrip nilai** untuk mata kuliah yang sudah ditempuh (berbeda dengan DO karena pelanggaran). Pastikan semua kewajiban administratif sudah diselesaikan sebelum pengunduran diri."
+  },
+  {
+    "kategori": "Penerimaan Mahasiswa Baru",
+    "pesan_user": "Mahasiswa asing mau masuk Unud, bagaimana prosedurnya?",
+    "jawaban_ideal": "Penerimaan Mahasiswa Asing (Warga Negara Asing/WNA) di Universitas Udayana diatur dalam Keputusan Rektor Unud Nomor 38/UN14/HK/2022. Prosedurnya:\n1. **Pendaftaran online** melalui laman https://e-registrasi.unud.ac.id untuk mendapatkan Nomor Peserta\n2. Mengikuti proses **ujian seleksi** (ujian tulis WNA)\n3. **Penentuan kelulusan** oleh Panitia Seleksi Mahasiswa Baru yang ditetapkan Rektor\n\nSyarat tambahan untuk WNA:\n- Memiliki ijazah sesuai persyaratan program studi\n- Wajib memperoleh **izin belajar** dari Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi RI\n- Mampu **berbahasa Indonesia** dengan baik dan benar\n- Bisa juga melalui jalur kerjasama/MoU dengan home university di luar negeri"
+  },
+  {
+    "kategori": "Kemahasiswaan",
+    "pesan_user": "Ada nggak konseling gratis buat mahasiswa FT yang lagi struggle?",
+    "jawaban_ideal": "Ya, ada! Mahasiswa FT Unud yang mengalami kesulitan — baik akademik maupun pribadi — dapat mengakses layanan berikut:\n\n1. **Dosen Pembimbing Akademik (PA)** – konsultasi masalah akademik dan personal tingkat pertama\n2. **Tim Bimbingan dan Konseling (TBK) Universitas Udayana** – lembaga resmi yang menyediakan:\n   - Bimbingan pengembangan diri\n   - Bimbingan akademik\n   - Bimbingan karir\n   - Konseling akademik\n   - Konseling pribadi\n3. **Wakil Dekan I/III** – untuk masalah yang lebih kompleks\n\nJangan ragu untuk mencari bantuan. Masalah yang tidak ditangani bisa berimbas pada prestasi studi dan berpotensi memperpanjang masa studi."
+  },
+  {
+    "kategori": "Kalender Akademik",
+    "pesan_user": "Rekonsiliasi data status keaktifan mahasiswa itu kapan dan untuk apa?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026:\n- **Rekonsiliasi Data Status Keaktifan Mahasiswa** untuk Semester Ganjil 2025/2026 dilakukan pada **Oktober 2025**\n- Rekonsiliasi untuk Semester Genap 2025/2026 dilakukan pada **Januari–Februari 2026**\n\nRekonsiliasi ini bertujuan untuk sinkronisasi data mahasiswa aktif antara sistem Universitas dengan **PDDikti (Pangkalan Data Pendidikan Tinggi)** — database nasional mahasiswa Indonesia. Data yang direkonsiliasi mencakup status keaktifan, jumlah SKS, IPK, dan informasi akademik lainnya. Penting bagi mahasiswa untuk memastikan data mereka di SIMAK sudah benar sebelum periode rekonsiliasi."
+  },
+  {
+    "kategori": "Sistem Kredit Semester",
+    "pesan_user": "Program Fast Track itu beban S2-nya berapa SKS dan boleh diambil mulai semester berapa?",
+    "jawaban_ideal": "Dalam Program Percepatan (Fast Track) di Unud:\n- **Beban studi S2:** minimal **54 SKS**\n- Mulai mengambil SKS S2: pada **semester 7 dan/atau 8** Program Sarjana, dengan kewajiban mengambil **minimal 9 SKS per semester** pada Program Magister\n- Total beban: S1 minimal 144 SKS + S2 minimal 54 SKS\n- Beban S2 semester awal (semester 1 dan 2 program magister): minimal 9 SKS per semester\n\nMahasiswa baru mendapatkan NIM Program Magister setelah lulus dari Program Sarjana."
+  },
+  {
+    "kategori": "Penilaian dan Nilai",
+    "pesan_user": "Gimana cara hitung IPS semester ini? Contohnya dong",
+    "jawaban_ideal": "IPS dihitung dengan rumus: **IPS = Σ(Mi × Ki) / ΣKi**\n\nContoh: Semester ini kamu mengambil 4 mata kuliah:\n- Matkul A: 3 SKS, nilai A (4,0)\n- Matkul B: 3 SKS, nilai B+ (3,5)\n- Matkul C: 2 SKS, nilai B (3,0)\n- Matkul D: 2 SKS, nilai C+ (2,5)\n\nIPS = (3×4,0 + 3×3,5 + 2×3,0 + 2×2,5) / (3+3+2+2)\n= (12 + 10,5 + 6 + 5) / 10\n= 33,5 / 10\n= **IPS 3,35**\n\nDengan IPS 3,35 (antara 3,00–3,50), semester depan kamu boleh mengambil maksimal **22 SKS**."
+  },
+  {
+    "kategori": "Evaluasi Kemajuan Studi",
+    "pesan_user": "Pada tahap III evaluasi studi, standar minimalnya apa?",
+    "jawaban_ideal": "Evaluasi Tahap III dilakukan pada **akhir semester 6** dengan ketentuan:\n- Mahasiswa wajib mengumpulkan minimal **80 SKS** dengan **IPK ≥ 2,75**\n- Jika tidak memenuhi → mendapat **peringatan tertulis**\n\nJika sudah mendapat peringatan pada Tahap II sebelumnya dan di Tahap III masih tidak memenuhi, ini berarti peringatan 2 kali berturut-turut yang dapat berakibat dianggap **gagal studi** pada program studi tersebut. Hasil evaluasi dikirimkan kepada mahasiswa, dosen PA, dan orang tua mahasiswa."
+  },
+  {
+    "kategori": "Administrasi Akademik",
+    "pesan_user": "UKT semester genap 2025/2026 kapan batas akhir pembayarannya?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026, batas akhir pembayaran Biaya Pendidikan/UKT untuk **Semester Genap 2025/2026** adalah **20 Februari 2026** (periode pembayaran: 2–20 Februari 2026). Pengumuman mahasiswa aktif semester genap dikeluarkan pada 23 Februari 2026. Mahasiswa yang tidak membayar tepat waktu tidak dapat mengisi KRS dan tidak berstatus aktif."
+  },
+  {
+    "kategori": "Tata Tertib dan Sanksi",
+    "pesan_user": "Konsekuensi kalau nggak bayar UKT tapi tetap mau ikut kuliah gimana?",
+    "jawaban_ideal": "Jika tidak membayar UKT sesuai kalender akademik, kamu tidak akan berstatus sebagai **mahasiswa aktif** dan:\n1. **Tidak boleh mengikuti perkuliahan** semester tersebut\n2. Tidak bisa mengisi KRS\n3. Masa studi tetap berjalan dan dihitung\n4. Tetap diwajibkan membayar UKT semester yang bersangkutan\n\nJika kondisi ini berlanjut 2 semester berturut-turut tanpa cuti resmi, kamu bisa dianggap **mengundurkan diri**. Jika ada kesulitan keuangan, segera konsultasi ke bagian kemahasiswaan tentang kemungkinan keringanan atau cicilan UKT."
+  },
+  {
+    "kategori": "Kemahasiswaan",
+    "pesan_user": "Gimana cara mendapatkan rekomendasi dari PA buat daftar beasiswa?",
+    "jawaban_ideal": "Untuk mendapatkan rekomendasi dari Dosen PA dalam rangka pendaftaran beasiswa:\n1. **Temui PA kamu** dan sampaikan niat mendaftar beasiswa beserta jenis beasiswa yang dituju\n2. Siapkan **dokumen pendukung**: transkrip nilai, KRS aktif, dan surat keterangan aktif mahasiswa\n3. PA akan menilai kelayakanmu berdasarkan IPK, perilaku, dan prestasi akademik\n4. Pastikan kamu sudah memiliki minimal **25 poin SKP** (salah satu syarat beasiswa)\n5. PA akan memberikan surat rekomendasi jika kamu memenuhi kriteria\n\nJaga hubungan baik dengan PA dan selalu update perkembangan studi kamu agar proses rekomendasi lebih mudah."
+  },
+  {
+    "kategori": "Kalender Akademik",
+    "pesan_user": "Kapan KKN semester gasal 2025 dilaksanakan?",
+    "jawaban_ideal": "Berdasarkan Kalender Akademik 2025–2026, pelaksanaan KKN-PPM (Kuliah Kerja Nyata Pembelajaran Pemberdayaan Masyarakat) untuk periode yang relevan dengan semester gasal adalah:\n- **Januari–Februari 2025** (sudah selesai untuk tahun akademik 2024/2025)\n- **Juli–Agustus 2025** (bersamaan dengan akhir semester genap/awal semester gasal 2025/2026)\n\nKKN selanjutnya dijadwalkan pada **Januari–Februari 2026** dan **Juli–Agustus 2026**. Pantau pengumuman resmi dari LPPM Unud untuk jadwal pendaftaran dan persyaratan KKN."
+  }
+]
