@@ -25,6 +25,7 @@ class Settings(BaseSettings):
         default="http://localhost:5173",
         validation_alias="FRONTEND_ORIGIN",
     )
+    trusted_hosts: str = Field(default="localhost,127.0.0.1,testserver", validation_alias="TRUSTED_HOSTS")
 
     jina_api_key: str | None = Field(default=None, validation_alias="JINA_API_KEY")
     jina_embedding_url: str = "https://api.jina.ai/v1/embeddings"
@@ -33,12 +34,22 @@ class Settings(BaseSettings):
 
     retrieval_top_k: int = 5
     retrieval_min_similarity: float = 0.2
+    rate_limit_auth_per_minute: int = Field(default=10, validation_alias="RATE_LIMIT_AUTH_PER_MINUTE")
+    rate_limit_qa_per_minute: int = Field(default=30, validation_alias="RATE_LIMIT_QA_PER_MINUTE")
     qa_dataset_path: str = Field(default="data/qa_dataset_rag.json", validation_alias="QA_DATASET_PATH")
     chunks_dataset_path: str = Field(default="data/chunks.json", validation_alias="CHUNKS_DATASET_PATH")
 
-    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
+    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8-sig", extra="ignore")
 
 
 @lru_cache
 def get_settings() -> Settings:
     return Settings()
+
+
+def get_frontend_origins() -> list[str]:
+    return [origin.strip() for origin in str(get_settings().frontend_origin).split(",") if origin.strip()]
+
+
+def get_trusted_hosts() -> list[str]:
+    return [host.strip() for host in get_settings().trusted_hosts.split(",") if host.strip()]

@@ -338,6 +338,7 @@ Middleware structure:
 - Trusted host in production.
 - Request logging and correlation id.
 - Rate limiting at API gateway/reverse proxy, with app-level fallback for auth and QA endpoints.
+- Security headers for content sniffing, framing, referrer, permissions, and no-store cache behavior.
 
 ## Frontend Architecture
 
@@ -490,10 +491,10 @@ Rate limiting:
 - Rate-limit `/auth/login`, `/auth/register`, and `/qa/ask`.
 - Prefer edge/proxy limits in production.
 - Add app-level limits with Redis if deployed horizontally.
+- Current implementation includes a per-process in-memory limiter suitable for local demos and single-instance deployment.
 
 Audit logging:
 
 - Log login success/failure, document changes, role changes, and QA usage.
 - Store actor, action, resource, request IP, user agent, and timestamp.
 - Do not log passwords or full JWTs.
-

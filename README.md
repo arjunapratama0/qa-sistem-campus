@@ -28,6 +28,13 @@ Import the provided document chunks into pgvector after configuring `DATABASE_UR
 .\venv\Scripts\python.exe scripts\import_chunks.py --replace
 ```
 
+Verify database and retrieval:
+
+```powershell
+.\venv\Scripts\python.exe scripts\check_database.py
+.\venv\Scripts\python.exe scripts\smoke_retrieval.py
+```
+
 For a small smoke test import:
 
 ```powershell

@@ -38,12 +38,15 @@ create table if not exists document_chunks (
   chunk_index int not null,
   content text not null,
   page_number int,
-  section_title varchar(255),
+  section_title text,
   token_count int not null default 0,
   embedding vector(1024) not null,
   created_at timestamptz not null default now(),
   unique(document_id, chunk_index)
 );
+
+alter table if exists document_chunks
+  alter column section_title type text;
 
 create table if not exists question_histories (
   id uuid primary key default gen_random_uuid(),
@@ -90,4 +93,3 @@ values
   ('staff', 'Campus staff document manager'),
   ('admin', 'System administrator')
 on conflict(name) do nothing;
-

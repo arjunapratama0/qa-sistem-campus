@@ -64,7 +64,7 @@ class DocumentChunk(Base):
     chunk_index: Mapped[int] = mapped_column(Integer, nullable=False)
     content: Mapped[str] = mapped_column(Text, nullable=False)
     page_number: Mapped[int | None] = mapped_column(Integer)
-    section_title: Mapped[str | None] = mapped_column(String(255))
+    section_title: Mapped[str | None] = mapped_column(Text)
     token_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
     embedding = mapped_column(Vector(settings.jina_embedding_dimensions), nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
@@ -101,3 +101,16 @@ class Citation(Base):
     question_history: Mapped[QuestionHistory] = relationship(back_populates="citations")
     document_chunk: Mapped[DocumentChunk] = relationship(back_populates="citations")
 
+
+class AuditLog(Base):
+    __tablename__ = "audit_logs"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    actor_user_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True), ForeignKey("users.id"))
+    action: Mapped[str] = mapped_column(String(100), nullable=False)
+    resource_type: Mapped[str | None] = mapped_column(String(100))
+    resource_id: Mapped[uuid.UUID | None] = mapped_column(UUID(as_uuid=True))
+    ip_address: Mapped[str | None] = mapped_column(String(64))
+    user_agent: Mapped[str | None] = mapped_column(Text)
+    audit_metadata: Mapped[dict] = mapped_column("metadata", JSONB, default=dict, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())

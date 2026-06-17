@@ -51,6 +51,12 @@ Cek koneksi database:
 .\venv\Scripts\python.exe scripts\check_database.py
 ```
 
+Cek retrieval Jina + pgvector:
+
+```powershell
+.\venv\Scripts\python.exe scripts\smoke_retrieval.py --question "Berapa maksimal SKS jika IPS 3.6?"
+```
+
 ## 3. Import Data RAG
 
 Project sudah memiliki:
@@ -140,6 +146,11 @@ Jika Ask AI gagal:
 - Pastikan `JINA_API_KEY` benar.
 - Pastikan `scripts/import_chunks.py` sudah dijalankan.
 - Pastikan tabel `document_chunks` sudah terisi dan punya embedding.
+
+Jika request API ditolak oleh host:
+
+- Tambahkan host backend ke `TRUSTED_HOSTS`.
+- Untuk lokal, nilai aman adalah `localhost,127.0.0.1,testserver`.
 
 Jika `npm` gagal di PowerShell:
 
