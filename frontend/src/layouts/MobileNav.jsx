@@ -10,7 +10,7 @@ const items = [
 
 export default function MobileNav() {
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-slate-200 bg-white md:hidden">
+    <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-slate-200 bg-white/95 backdrop-blur-xl dark:border-white/10 dark:bg-[#07111f]/95 md:hidden">
       <div className="grid grid-cols-4">
         {items.map((item) => {
           const Icon = item.icon;
@@ -21,7 +21,7 @@ export default function MobileNav() {
               className={({ isActive }) =>
                 [
                   "flex min-h-16 flex-col items-center justify-center gap-1 text-xs font-medium",
-                  isActive ? "text-campus-blue" : "text-campus-muted",
+                  isActive ? "text-campus-blue dark:text-campus-gold" : "text-campus-muted dark:text-slate-400",
                 ].join(" ")
               }
             >

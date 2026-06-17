@@ -23,15 +23,20 @@ class AuthService:
         self.refresh_tokens = RefreshTokenRepository(db)
 
     def register(self, payload: RegisterRequest) -> TokenResponse:
-        if self.users.get_by_email(payload.email):
-            raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Email is already registered")
+        nim = payload.nim.strip()
+        if self.users.get_by_identifier(nim):
+            raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="NIM is already registered")
 
         role = self.roles.get_default_student_role()
+        email = str(payload.email) if payload.email else f"{nim}@student.smart-campus.id"
         user = self.users.create(
             full_name=payload.full_name,
-            email=str(payload.email),
+            email=email,
             password_hash=hash_password(payload.password),
             role_id=role.id,
+            login_identifier=nim,
+            identity_type="student",
+            nim=nim,
         )
         self.db.commit()
         self.db.refresh(user)
@@ -41,9 +46,9 @@ class AuthService:
         return response
 
     def login(self, payload: LoginRequest) -> TokenResponse:
-        user = self.users.get_by_email(str(payload.email))
+        user = self.users.get_by_identifier(payload.identifier)
         if not user or not verify_password(payload.password, user.password_hash):
-            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid email or password")
+            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid identifier or password")
         if not user.is_active:
             raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="User account is inactive")
 
@@ -69,7 +74,15 @@ class AuthService:
             self.db.commit()
 
     def _create_token_response(self, user) -> TokenResponse:
-        access_token = create_access_token(str(user.id), {"email": user.email, "role": user.role.name})
+        access_token = create_access_token(
+            str(user.id),
+            {
+                "identifier": user.login_identifier,
+                "identity_type": user.identity_type,
+                "email": user.email,
+                "role": user.role.name,
+            },
+        )
         refresh_token = create_opaque_token()
         expires_at = datetime.now(UTC) + timedelta(days=settings.refresh_token_expire_days)
         self.refresh_tokens.create(user.id, hash_token(refresh_token), expires_at)

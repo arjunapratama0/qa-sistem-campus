@@ -6,7 +6,7 @@ import { useAuth } from "../contexts/useAuth.js";
 export default function RegisterPage() {
   const navigate = useNavigate();
   const { isAuthenticated, register } = useAuth();
-  const [form, setForm] = useState({ full_name: "", email: "", password: "" });
+  const [form, setForm] = useState({ full_name: "", nim: "", email: "", password: "" });
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -19,7 +19,7 @@ export default function RegisterPage() {
     setError("");
     setLoading(true);
     try {
-      await register(form);
+      await register({ ...form, email: form.email || undefined });
       navigate("/dashboard");
     } catch (err) {
       setError(err.message);
@@ -29,48 +29,57 @@ export default function RegisterPage() {
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-slate-50 px-4">
-      <form onSubmit={handleSubmit} className="w-full max-w-md rounded-lg border border-slate-200 bg-white p-6 shadow-panel">
-        <p className="text-sm font-semibold text-campus-blue">Smart Informant Campus</p>
-        <h1 className="mt-3 text-2xl font-semibold text-campus-ink">Register</h1>
+    <main className="premium-gradient flex min-h-screen items-center justify-center px-4 py-10">
+      <form onSubmit={handleSubmit} className="w-full max-w-md rounded-2xl border border-white/20 bg-white/95 p-7 shadow-premium backdrop-blur">
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-campus-gold">Teknologi Informasi</p>
+        <h1 className="mt-3 text-3xl font-bold text-campus-ink">Registrasi Mahasiswa</h1>
+        <p className="mt-2 text-sm leading-6 text-campus-muted">Akun mahasiswa menggunakan NIM dan password.</p>
         <div className="mt-6 space-y-4">
           <label className="block">
-            <span className="text-sm font-medium text-campus-ink">Full name</span>
+            <span className="text-sm font-semibold text-campus-ink">Nama lengkap</span>
             <input
               value={form.full_name}
               onChange={(event) => setForm({ ...form, full_name: event.target.value })}
-              className="mt-2 h-11 w-full rounded-md border border-slate-300 px-3 text-sm outline-none focus:border-campus-blue focus:ring-2 focus:ring-blue-100"
+              className="field-control mt-2 h-12 w-full"
               required
             />
           </label>
           <label className="block">
-            <span className="text-sm font-medium text-campus-ink">Email</span>
+            <span className="text-sm font-semibold text-campus-ink">NIM</span>
+            <input
+              value={form.nim}
+              onChange={(event) => setForm({ ...form, nim: event.target.value })}
+              className="field-control mt-2 h-12 w-full"
+              required
+            />
+          </label>
+          <label className="block">
+            <span className="text-sm font-semibold text-campus-ink">Email opsional</span>
             <input
               type="email"
               value={form.email}
               onChange={(event) => setForm({ ...form, email: event.target.value })}
-              className="mt-2 h-11 w-full rounded-md border border-slate-300 px-3 text-sm outline-none focus:border-campus-blue focus:ring-2 focus:ring-blue-100"
-              required
+              className="field-control mt-2 h-12 w-full"
             />
           </label>
           <label className="block">
-            <span className="text-sm font-medium text-campus-ink">Password</span>
+            <span className="text-sm font-semibold text-campus-ink">Password</span>
             <input
               type="password"
               minLength={8}
               value={form.password}
               onChange={(event) => setForm({ ...form, password: event.target.value })}
-              className="mt-2 h-11 w-full rounded-md border border-slate-300 px-3 text-sm outline-none focus:border-campus-blue focus:ring-2 focus:ring-blue-100"
+              className="field-control mt-2 h-12 w-full"
               required
             />
           </label>
         </div>
         {error ? <p className="mt-4 rounded-md bg-red-50 px-3 py-2 text-sm text-red-700">{error}</p> : null}
         <div className="mt-6 flex items-center justify-between gap-3">
-          <Link to="/login" className="text-sm font-medium text-campus-blue hover:underline">
-            Already registered
+          <Link to="/login" className="text-sm font-semibold text-campus-blue hover:underline">
+            Sudah punya akun
           </Link>
-          <SubmitButton loading={loading}>Register</SubmitButton>
+          <SubmitButton loading={loading}>Daftar</SubmitButton>
         </div>
       </form>
     </main>

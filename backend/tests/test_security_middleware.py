@@ -18,6 +18,6 @@ def test_rate_limit_applies_to_login():
 
     last_response = None
     for _ in range(12):
-        last_response = client.post("/api/v1/auth/login", json={"email": "bad@example.com", "password": "bad"})
+        last_response = client.post("/api/v1/auth/login", json={"identifier": "2305551000", "password": "bad"})
 
     assert last_response.status_code == 429

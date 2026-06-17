@@ -13,11 +13,31 @@ create table if not exists users (
   role_id uuid not null references roles(id),
   full_name varchar(150) not null,
   email varchar(255) not null unique,
+  login_identifier varchar(50) unique,
+  identity_type varchar(20) not null default 'student',
+  nim varchar(30) unique,
+  nip varchar(30) unique,
   password_hash text not null,
   is_active boolean not null default true,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
+
+alter table if exists users
+  add column if not exists login_identifier varchar(50) unique;
+
+alter table if exists users
+  add column if not exists identity_type varchar(20) not null default 'student';
+
+alter table if exists users
+  add column if not exists nim varchar(30) unique;
+
+alter table if exists users
+  add column if not exists nip varchar(30) unique;
+
+update users
+set login_identifier = coalesce(login_identifier, email)
+where login_identifier is null;
 
 create table if not exists refresh_tokens (
   id uuid primary key default gen_random_uuid(),
@@ -98,6 +118,9 @@ create table if not exists audit_logs (
 
 create index if not exists idx_documents_created_by on documents(created_by);
 create index if not exists idx_documents_status on documents(status);
+create index if not exists idx_users_login_identifier on users(login_identifier);
+create index if not exists idx_users_nim on users(nim);
+create index if not exists idx_users_nip on users(nip);
 create index if not exists idx_refresh_tokens_user on refresh_tokens(user_id);
 create index if not exists idx_refresh_tokens_hash on refresh_tokens(token_hash);
 create index if not exists idx_chunks_document_id on document_chunks(document_id);
