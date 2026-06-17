@@ -29,4 +29,3 @@ def decode_access_token(token: str) -> dict[str, Any]:
     if payload.get("type") != "access" or not payload.get("sub"):
         raise ValueError("Invalid token payload")
     return payload
-

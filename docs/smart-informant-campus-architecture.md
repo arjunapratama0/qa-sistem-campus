@@ -2,7 +2,7 @@
 
 ## 1. High-Level Architecture
 
-Smart Informant Campus is a retrieval-augmented question answering system for university students. The system is split into a React client, a FastAPI API, Supabase PostgreSQL with pgvector, and Jina Embeddings v3.
+Smart Informant Campus is a retrieval-augmented question answering system for university students. The system is split into a React client, a FastAPI API, Supabase PostgreSQL with pgvector, Jina Embeddings v3, and Groq for free grounded answer generation.
 
 ```text
 React + Vite UI
@@ -15,6 +15,7 @@ React + Vite UI
         -> relational tables
         -> pgvector semantic index
       -> Jina Embeddings v3 API
+      -> Groq chat completions API
 ```
 
 The backend owns application rules and database access. The frontend only handles presentation, routing, local session state, and API calls. Supabase PostgreSQL stores users, roles, documents, chunks, embeddings, question history, and citations.
@@ -62,9 +63,10 @@ Authentication flow:
 1. User registers with name, email, password.
 2. Backend hashes the password with bcrypt.
 3. Backend assigns the default `student` role.
-4. Login validates credentials and returns a signed JWT.
-5. Frontend stores the token and sends `Authorization: Bearer <token>`.
+4. Login validates credentials and returns a short-lived signed access JWT plus an opaque refresh token.
+5. Frontend stores tokens and sends `Authorization: Bearer <token>`.
 6. Backend resolves the current user and role for protected requests.
+7. Refresh token rotation renews sessions, and logout revokes the active refresh token.
 
 Question answering flow:
 
@@ -73,18 +75,21 @@ Question answering flow:
 3. Backend calls Jina Embeddings v3 using `retrieval.query`.
 4. Backend searches `document_chunks.embedding` with cosine distance in pgvector.
 5. Backend retrieves the top 5 chunks above the similarity threshold.
-6. Backend creates a grounded answer from the retrieved context.
-7. Backend stores question, answer, confidence score, and citations.
-8. Frontend renders the answer, citations, and history entry.
+6. Backend asks Groq to generate a grounded answer from the retrieved context when `GROQ_API_KEY` is configured.
+7. Backend falls back to extractive source-based answering if Groq is unavailable.
+8. Backend stores question, answer, confidence score, and citations.
+9. Frontend renders the answer, citations, and history entry.
 
 Document ingestion flow:
 
-1. Admin uploads or registers a campus document.
-2. Backend extracts text and metadata.
-3. Text is normalized and chunked.
-4. Each chunk is embedded with Jina Embeddings v3 using `retrieval.passage`.
-5. Document, chunks, and vectors are stored in Supabase PostgreSQL.
-6. Vector indexes support fast semantic search.
+1. Admin/staff uploads a PDF document.
+2. Backend extracts text with `pypdf`.
+3. Backend extracts tables with `pdfplumber`.
+4. Image-only/scanned pages are marked with `needs_ocr` metadata.
+5. Text and tables are normalized and chunked with overlap.
+6. Each chunk is embedded with Jina Embeddings v3 using `retrieval.passage`.
+7. Document, chunks, source chunk ids, original metadata, and vectors are stored in Supabase PostgreSQL.
+8. Vector indexes support fast semantic search.
 
 ## 4. Technology Justification
 
@@ -117,7 +122,7 @@ Clean Architecture:
 - Routers stay thin and framework-specific.
 - Services hold business rules.
 - Repositories isolate database persistence.
-- Infrastructure clients isolate Jina, JWT, password hashing, and SQLAlchemy.
+- Infrastructure clients isolate Jina, Groq, JWT, password hashing, and SQLAlchemy.
 
 ## Production Project Structure
 
@@ -395,11 +400,13 @@ UI layout:
 Document ingestion:
 
 1. Validate admin/staff access.
-2. Extract text from PDF, DOCX, or manual input.
-3. Normalize whitespace, remove repeated headers/footers where possible.
-4. Split into chunks.
-5. Generate embeddings with Jina v3 using `task: retrieval.passage`.
-6. Store document metadata, chunk content, and vector embeddings.
+2. Accept PDF upload only.
+3. Extract normal text with `pypdf`.
+4. Extract tables with `pdfplumber` and serialize rows into text.
+5. Mark image-only/scanned pages with `needs_ocr` metadata for later OCR review.
+6. Normalize whitespace and split into overlapping chunks.
+7. Generate embeddings with Jina v3 using `task: retrieval.passage`.
+8. Store document metadata, chunk content, source chunk id, original metadata, and vector embeddings.
 
 Chunking strategy:
 
@@ -457,9 +464,10 @@ Authorization:
 JWT strategy:
 
 - Use `sub`, `email`, `role`, `exp`, `iat`, and `type`.
-- Keep token lifetime short, default 60 minutes.
+- Keep access token lifetime short, default 15 minutes.
 - Use HTTPS only in production.
-- Store refresh tokens later as opaque, revocable server-side records.
+- Store refresh tokens as opaque, hashed, revocable server-side records.
+- Rotate refresh tokens and revoke the active refresh token on logout.
 
 Password hashing:
 

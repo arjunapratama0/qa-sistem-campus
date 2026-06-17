@@ -1,5 +1,6 @@
 from uuid import UUID
 
+import json
 from sqlalchemy import func, text
 from sqlalchemy.orm import Session
 
@@ -38,14 +39,16 @@ class DocumentRepository:
         page_number: int | None,
         section_title: str | None,
         embedding: list[float],
+        source_chunk_id: str | None = None,
+        metadata: dict | None = None,
     ) -> None:
         statement = text(
             """
             insert into document_chunks (
-              document_id, chunk_index, content, page_number, section_title, token_count, embedding
+              document_id, chunk_index, content, page_number, section_title, source_chunk_id, metadata, token_count, embedding
             )
             values (
-              :document_id, :chunk_index, :content, :page_number, :section_title, :token_count, cast(:embedding as vector)
+              :document_id, :chunk_index, :content, :page_number, :section_title, :source_chunk_id, cast(:metadata as jsonb), :token_count, cast(:embedding as vector)
             )
             """
         )
@@ -57,6 +60,8 @@ class DocumentRepository:
                 "content": content,
                 "page_number": page_number,
                 "section_title": section_title,
+                "source_chunk_id": source_chunk_id,
+                "metadata": json.dumps(metadata or {}, ensure_ascii=False),
                 "token_count": len(content.split()),
                 "embedding": vector_literal(embedding),
             },
@@ -70,4 +75,3 @@ class DocumentRepository:
             .order_by(Document.created_at.desc())
             .all()
         )
-

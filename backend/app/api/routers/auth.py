@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
 from app.api.dependencies import get_current_user
-from app.application.schemas.auth import LoginRequest, RegisterRequest, TokenResponse
+from app.application.schemas.auth import LoginRequest, LogoutRequest, RefreshTokenRequest, RegisterRequest, TokenResponse
 from app.application.schemas.user import UserRead
 from app.application.services.auth_service import AuthService
 from app.infrastructure.db.models import User
@@ -21,7 +21,16 @@ def login(payload: LoginRequest, db: Session = Depends(get_db)) -> TokenResponse
     return AuthService(db).login(payload)
 
 
+@router.post("/refresh", response_model=TokenResponse)
+def refresh(payload: RefreshTokenRequest, db: Session = Depends(get_db)) -> TokenResponse:
+    return AuthService(db).refresh(payload)
+
+
+@router.post("/logout", status_code=204)
+def logout(payload: LogoutRequest, db: Session = Depends(get_db)) -> None:
+    AuthService(db).logout(payload.refresh_token)
+
+
 @router.get("/me", response_model=UserRead)
 def me(current_user: User = Depends(get_current_user)) -> User:
     return current_user
-

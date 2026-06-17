@@ -26,3 +26,6 @@ class DocumentRead(BaseModel):
     status: str
     chunk_count: int = 0
 
+
+class DocumentUploadResponse(DocumentRead):
+    message: str

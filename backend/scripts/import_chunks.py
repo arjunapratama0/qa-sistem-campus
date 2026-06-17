@@ -94,10 +94,10 @@ def insert_chunk(db, document_id, chunk: dict[str, Any], chunk_index: int, embed
         text(
             """
             insert into document_chunks (
-              document_id, chunk_index, content, page_number, section_title, token_count, embedding
+              document_id, chunk_index, content, page_number, section_title, source_chunk_id, metadata, token_count, embedding
             )
             values (
-              :document_id, :chunk_index, :content, :page_number, :section_title, :token_count, cast(:embedding as vector)
+              :document_id, :chunk_index, :content, :page_number, :section_title, :source_chunk_id, cast(:metadata as jsonb), :token_count, cast(:embedding as vector)
             )
             on conflict (document_id, chunk_index) do nothing
             """
@@ -108,6 +108,8 @@ def insert_chunk(db, document_id, chunk: dict[str, Any], chunk_index: int, embed
             "content": chunk["text"],
             "page_number": metadata.get("page_start"),
             "section_title": metadata.get("current_heading") or metadata.get("section"),
+            "source_chunk_id": chunk.get("id"),
+            "metadata": json.dumps(metadata, ensure_ascii=False),
             "token_count": len(chunk["text"].split()),
             "embedding": vector_literal(embedding),
         },

@@ -1,18 +1,11 @@
-import { Plus } from "lucide-react";
+import { FileUp } from "lucide-react";
 import { useEffect, useState } from "react";
-import { createDocument, getDocuments } from "../api/documents.js";
-
-const emptyForm = {
-  title: "",
-  source_type: "manual",
-  source_url: "",
-  file_name: "",
-  chunks: [{ content: "", page_number: "", section_title: "" }],
-};
+import { getDocuments, uploadDocumentPdf } from "../api/documents.js";
 
 export default function DocumentsPage() {
   const [documents, setDocuments] = useState([]);
-  const [form, setForm] = useState(emptyForm);
+  const [title, setTitle] = useState("");
+  const [file, setFile] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -54,29 +47,19 @@ export default function DocumentsPage() {
     };
   }, []);
 
-  function updateChunk(index, key, value) {
-    const chunks = form.chunks.map((chunk, currentIndex) =>
-      currentIndex === index ? { ...chunk, [key]: value } : chunk,
-    );
-    setForm({ ...form, chunks });
-  }
-
   async function handleSubmit(event) {
     event.preventDefault();
+    if (!file) {
+      setError("Please choose a PDF file.");
+      return;
+    }
     setError("");
     setSaving(true);
     try {
-      const payload = {
-        ...form,
-        source_url: form.source_url || null,
-        file_name: form.file_name || null,
-        chunks: form.chunks.map((chunk) => ({
-          ...chunk,
-          page_number: chunk.page_number ? Number(chunk.page_number) : null,
-        })),
-      };
-      await createDocument(payload);
-      setForm(emptyForm);
+      await uploadDocumentPdf({ file, title });
+      setTitle("");
+      setFile(null);
+      event.currentTarget.reset();
       await loadDocuments();
     } catch (err) {
       setError(err.message);
@@ -118,44 +101,31 @@ export default function DocumentsPage() {
       </section>
 
       <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-panel">
-        <h2 className="text-lg font-semibold text-campus-ink">Add source document</h2>
+        <h2 className="text-lg font-semibold text-campus-ink">Upload PDF source</h2>
         <form onSubmit={handleSubmit} className="mt-5 space-y-4">
           <input
-            value={form.title}
-            onChange={(event) => setForm({ ...form, title: event.target.value })}
-            placeholder="Document title"
+            value={title}
+            onChange={(event) => setTitle(event.target.value)}
+            placeholder="Document title, optional"
             className="h-11 w-full rounded-md border border-slate-300 px-3 text-sm outline-none focus:border-campus-blue focus:ring-2 focus:ring-blue-100"
+          />
+          <input
+            type="file"
+            accept="application/pdf,.pdf"
+            onChange={(event) => setFile(event.target.files?.[0] || null)}
+            className="block w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-campus-muted file:mr-4 file:rounded-md file:border-0 file:bg-blue-50 file:px-3 file:py-2 file:text-sm file:font-semibold file:text-campus-blue"
             required
           />
-          <textarea
-            value={form.chunks[0].content}
-            onChange={(event) => updateChunk(0, "content", event.target.value)}
-            placeholder="Document text chunk"
-            className="min-h-36 w-full rounded-md border border-slate-300 p-3 text-sm outline-none focus:border-campus-blue focus:ring-2 focus:ring-blue-100"
-            required
-          />
-          <div className="grid gap-3 sm:grid-cols-2">
-            <input
-              value={form.chunks[0].section_title}
-              onChange={(event) => updateChunk(0, "section_title", event.target.value)}
-              placeholder="Section title"
-              className="h-11 rounded-md border border-slate-300 px-3 text-sm outline-none focus:border-campus-blue focus:ring-2 focus:ring-blue-100"
-            />
-            <input
-              type="number"
-              value={form.chunks[0].page_number}
-              onChange={(event) => updateChunk(0, "page_number", event.target.value)}
-              placeholder="Page"
-              className="h-11 rounded-md border border-slate-300 px-3 text-sm outline-none focus:border-campus-blue focus:ring-2 focus:ring-blue-100"
-            />
-          </div>
+          <p className="text-sm leading-6 text-campus-muted">
+            PDF akan diekstrak, dipotong menjadi chunks, dibuat embedding dengan Jina, lalu tersimpan sebagai sumber QA.
+          </p>
           <button
             type="submit"
             disabled={saving}
             className="inline-flex min-h-11 items-center gap-2 rounded-md bg-campus-blue px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700 disabled:bg-slate-400"
           >
-            <Plus size={17} />
-            {saving ? "Saving..." : "Create document"}
+            <FileUp size={17} />
+            {saving ? "Uploading..." : "Upload and embed"}
           </button>
         </form>
       </section>

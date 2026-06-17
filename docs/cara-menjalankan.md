@@ -31,6 +31,9 @@ DATABASE_URL=postgresql+psycopg://postgres.ofdjfpwfvkryhfmchssq:SUPABASE_PASSWOR
 JWT_SECRET_KEY=ganti-dengan-secret-panjang
 FRONTEND_ORIGIN=http://localhost:5173
 JINA_API_KEY=ganti-dengan-jina-api-key
+LLM_PROVIDER=groq
+GROQ_API_KEY=ganti-dengan-groq-api-key
+GROQ_MODEL=llama-3.1-8b-instant
 ```
 
 Install dependency backend:
@@ -55,6 +58,12 @@ Cek retrieval Jina + pgvector:
 
 ```powershell
 .\venv\Scripts\python.exe scripts\smoke_retrieval.py --question "Berapa maksimal SKS jika IPS 3.6?"
+```
+
+Jalankan test suite:
+
+```powershell
+.\venv\Scripts\python.exe -m pytest
 ```
 
 ## 3. Import Data RAG
@@ -128,9 +137,24 @@ http://127.0.0.1:5173
 6. Sistem akan:
    - membuat embedding pertanyaan memakai Jina,
    - mencari top 5 chunks di Supabase pgvector,
-   - mengembalikan jawaban,
+   - membuat jawaban dengan Groq jika `GROQ_API_KEY` tersedia,
+   - fallback ke jawaban extractive jika Groq belum dikonfigurasi,
    - menampilkan citations,
    - menyimpan question history.
+
+## Upload PDF Admin
+
+Admin/staff memperbarui data hanya lewat upload PDF di halaman Documents.
+
+Pipeline upload:
+
+1. Validasi file PDF.
+2. Ekstraksi teks memakai `pypdf`.
+3. Ekstraksi tabel memakai `pdfplumber`.
+4. Halaman yang hanya gambar/scanned ditandai `needs_ocr` di metadata.
+5. Teks dan tabel dipotong menjadi chunks dengan overlap.
+6. Chunks dibuat embedding dengan Jina.
+7. Chunks disimpan ke Supabase dengan metadata sumber, halaman, tabel, dan citation support.
 
 ## Troubleshooting
 
@@ -146,6 +170,7 @@ Jika Ask AI gagal:
 - Pastikan `JINA_API_KEY` benar.
 - Pastikan `scripts/import_chunks.py` sudah dijalankan.
 - Pastikan tabel `document_chunks` sudah terisi dan punya embedding.
+- Jika jawaban LLM tidak muncul, pastikan `GROQ_API_KEY` benar. Tanpa Groq, sistem tetap menjawab dari chunk sumber.
 
 Jika request API ditolak oleh host:
 

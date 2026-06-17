@@ -19,6 +19,15 @@ create table if not exists users (
   updated_at timestamptz not null default now()
 );
 
+create table if not exists refresh_tokens (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references users(id) on delete cascade,
+  token_hash text not null unique,
+  expires_at timestamptz not null,
+  revoked_at timestamptz,
+  created_at timestamptz not null default now()
+);
+
 create table if not exists documents (
   id uuid primary key default gen_random_uuid(),
   created_by uuid references users(id),
@@ -39,6 +48,8 @@ create table if not exists document_chunks (
   content text not null,
   page_number int,
   section_title text,
+  source_chunk_id varchar(255),
+  metadata jsonb not null default '{}'::jsonb,
   token_count int not null default 0,
   embedding vector(1024) not null,
   created_at timestamptz not null default now(),
@@ -47,6 +58,12 @@ create table if not exists document_chunks (
 
 alter table if exists document_chunks
   alter column section_title type text;
+
+alter table if exists document_chunks
+  add column if not exists source_chunk_id varchar(255);
+
+alter table if exists document_chunks
+  add column if not exists metadata jsonb not null default '{}'::jsonb;
 
 create table if not exists question_histories (
   id uuid primary key default gen_random_uuid(),
@@ -81,7 +98,10 @@ create table if not exists audit_logs (
 
 create index if not exists idx_documents_created_by on documents(created_by);
 create index if not exists idx_documents_status on documents(status);
+create index if not exists idx_refresh_tokens_user on refresh_tokens(user_id);
+create index if not exists idx_refresh_tokens_hash on refresh_tokens(token_hash);
 create index if not exists idx_chunks_document_id on document_chunks(document_id);
+create index if not exists idx_chunks_source_chunk_id on document_chunks(source_chunk_id);
 create index if not exists idx_chunks_embedding_hnsw on document_chunks using hnsw (embedding vector_cosine_ops);
 create index if not exists idx_histories_user_created on question_histories(user_id, created_at desc);
 create index if not exists idx_citations_history on citations(question_history_id);

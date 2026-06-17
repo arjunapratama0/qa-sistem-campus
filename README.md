@@ -33,6 +33,7 @@ Verify database and retrieval:
 ```powershell
 .\venv\Scripts\python.exe scripts\check_database.py
 .\venv\Scripts\python.exe scripts\smoke_retrieval.py
+.\venv\Scripts\python.exe -m pytest
 ```
 
 For a small smoke test import:
@@ -47,6 +48,15 @@ Required environment variables:
 - `JWT_SECRET_KEY`
 - `FRONTEND_ORIGIN`
 - `JINA_API_KEY`
+- `GROQ_API_KEY` for free Groq LLM answer generation. Without it, QA falls back to extractive cited answers.
+
+Admin document updates are done through PDF upload only:
+
+```text
+POST /api/v1/documents/upload
+```
+
+The upload pipeline extracts PDF text and tables, chunks the content, embeds it with Jina, and stores original chunk metadata for citations.
 
 ## GitHub
 

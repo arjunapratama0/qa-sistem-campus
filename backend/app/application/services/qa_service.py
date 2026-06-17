@@ -5,6 +5,7 @@ from app.core.config import get_settings
 from app.domain.retrieval import RetrievedChunk
 from app.infrastructure.db.models import User
 from app.infrastructure.external.jina import JinaEmbeddingClient
+from app.infrastructure.external.llm import FreeLLMClient
 from app.infrastructure.repositories.chunks import ChunkRepository
 from app.infrastructure.repositories.history import QuestionHistoryRepository
 
@@ -12,9 +13,15 @@ settings = get_settings()
 
 
 class QAService:
-    def __init__(self, db: Session, embedding_client: JinaEmbeddingClient | None = None):
+    def __init__(
+        self,
+        db: Session,
+        embedding_client: JinaEmbeddingClient | None = None,
+        llm_client: FreeLLMClient | None = None,
+    ):
         self.db = db
         self.embedding_client = embedding_client or JinaEmbeddingClient()
+        self.llm_client = llm_client or FreeLLMClient()
         self.chunks = ChunkRepository(db)
         self.histories = QuestionHistoryRepository(db)
 
@@ -25,7 +32,8 @@ class QAService:
             chunk for chunk in retrieved if chunk.similarity_score >= settings.retrieval_min_similarity
         ]
 
-        answer = self._build_answer(usable_chunks)
+        llm_answer = await self.llm_client.generate_answer(question, usable_chunks)
+        answer = llm_answer or self._build_answer(usable_chunks)
         confidence_score = self._calculate_confidence(usable_chunks)
 
         history = self.histories.create_with_citations(
@@ -91,4 +99,3 @@ class QAService:
         coverage = min(len(chunks) / settings.retrieval_top_k, 1.0)
         confidence = (top_similarity * 0.7) + (average_similarity * 0.2) + (coverage * 0.1)
         return round(max(0.0, min(confidence, 1.0)), 4)
-

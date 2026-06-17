@@ -11,3 +11,15 @@ export function createDocument(payload) {
   });
 }
 
+export function uploadDocumentPdf({ file, title }) {
+  const formData = new FormData();
+  formData.append("file", file);
+  if (title) {
+    formData.append("title", title);
+  }
+
+  return apiRequest("/documents/upload", {
+    method: "POST",
+    body: formData,
+  });
+}

@@ -19,7 +19,8 @@ class Settings(BaseSettings):
         validation_alias="JWT_SECRET_KEY",
     )
     jwt_algorithm: str = "HS256"
-    access_token_expire_minutes: int = 60
+    access_token_expire_minutes: int = Field(default=15, validation_alias="ACCESS_TOKEN_EXPIRE_MINUTES")
+    refresh_token_expire_days: int = Field(default=7, validation_alias="REFRESH_TOKEN_EXPIRE_DAYS")
 
     frontend_origin: str | AnyHttpUrl = Field(
         default="http://localhost:5173",
@@ -32,8 +33,16 @@ class Settings(BaseSettings):
     jina_embedding_model: str = "jina-embeddings-v3"
     jina_embedding_dimensions: int = 1024
 
+    llm_provider: str = Field(default="groq", validation_alias="LLM_PROVIDER")
+    groq_api_key: str | None = Field(default=None, validation_alias="GROQ_API_KEY")
+    groq_base_url: str = Field(default="https://api.groq.com/openai/v1", validation_alias="GROQ_BASE_URL")
+    groq_model: str = Field(default="llama-3.1-8b-instant", validation_alias="GROQ_MODEL")
+
     retrieval_top_k: int = 5
     retrieval_min_similarity: float = 0.2
+    chunk_target_words: int = Field(default=450, validation_alias="CHUNK_TARGET_WORDS")
+    chunk_overlap_words: int = Field(default=80, validation_alias="CHUNK_OVERLAP_WORDS")
+    pdf_max_upload_mb: int = Field(default=20, validation_alias="PDF_MAX_UPLOAD_MB")
     rate_limit_auth_per_minute: int = Field(default=10, validation_alias="RATE_LIMIT_AUTH_PER_MINUTE")
     rate_limit_qa_per_minute: int = Field(default=30, validation_alias="RATE_LIMIT_QA_PER_MINUTE")
     qa_dataset_path: str = Field(default="data/qa_dataset_rag.json", validation_alias="QA_DATASET_PATH")
