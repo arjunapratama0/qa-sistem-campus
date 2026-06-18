@@ -149,12 +149,22 @@ Admin/staff memperbarui data hanya lewat upload PDF di halaman Documents.
 Pipeline upload:
 
 1. Validasi file PDF.
-2. Ekstraksi teks memakai `pypdf`.
-3. Ekstraksi tabel memakai `pdfplumber`.
-4. Halaman yang hanya gambar/scanned ditandai `needs_ocr` di metadata.
-5. Teks dan tabel dipotong menjadi chunks dengan overlap.
+2. Ekstraksi teks dan tabel memakai `pdfplumber`, dengan fallback `pypdf`.
+3. Teks/tabel disusun ke format Markdown internal agar halaman, source, dan tabel tetap terbaca.
+4. Cleaning RAG: hapus footer/noise, perbaiki huruf dobel, buang front matter Pedoman, dan jaga struktur heading.
+5. Chunking semantik:
+   - Pedoman Akademik mengikuti bab/section/subsection.
+   - Kalender Akademik dipecah dengan prinsip satu kegiatan = satu chunk jika tabel kalender terdeteksi.
 6. Chunks dibuat embedding dengan Jina.
-7. Chunks disimpan ke Supabase dengan metadata sumber, halaman, tabel, dan citation support.
+7. Chunks disimpan ke Supabase dengan metadata sumber, halaman, section path, stable chunk id, dan citation support.
+
+OCR bersifat opsional. Jika ingin memproses PDF scan/gambar:
+
+```env
+PDF_ENABLE_OCR=true
+```
+
+Lalu pastikan dependency Python sudah terinstall dari `requirements.txt` dan aplikasi Tesseract OCR sudah terpasang di Windows serta tersedia di `PATH`.
 
 ## Troubleshooting
 

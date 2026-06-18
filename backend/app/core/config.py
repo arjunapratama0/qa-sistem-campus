@@ -43,6 +43,7 @@ class Settings(BaseSettings):
     chunk_target_words: int = Field(default=450, validation_alias="CHUNK_TARGET_WORDS")
     chunk_overlap_words: int = Field(default=80, validation_alias="CHUNK_OVERLAP_WORDS")
     pdf_max_upload_mb: int = Field(default=20, validation_alias="PDF_MAX_UPLOAD_MB")
+    pdf_enable_ocr: bool = Field(default=False, validation_alias="PDF_ENABLE_OCR")
     rate_limit_auth_per_minute: int = Field(default=10, validation_alias="RATE_LIMIT_AUTH_PER_MINUTE")
     rate_limit_qa_per_minute: int = Field(default=30, validation_alias="RATE_LIMIT_QA_PER_MINUTE")
     qa_dataset_path: str = Field(default="data/qa_dataset_rag.json", validation_alias="QA_DATASET_PATH")

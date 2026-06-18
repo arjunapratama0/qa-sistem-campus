@@ -89,7 +89,7 @@ class DocumentService:
                     page_number=chunk.page_number,
                     section_title=chunk.section_title,
                     embedding=embedding,
-                    source_chunk_id=f"{document.id}_{offset:04d}",
+                    source_chunk_id=chunk.source_chunk_id,
                     metadata=chunk.metadata,
                 )
 
